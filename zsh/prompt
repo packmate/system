@@ -1,0 +1,19 @@
+setopt PROMPT_SUBST # Enable prompt substitution.
+
+# Git prompt functions.
+
+get_git_branch() {
+  (g rev-parse --abbrev-ref HEAD) 2> /dev/null
+}
+
+git_prompt() {
+  local branch_raw="$(get_git_branch)"
+  local branch="%{$fg[green]%}[$branch_raw]%{$reset_color%}"
+
+  # Only show if on a branch.
+  [ -n "$branch_raw" ] && echo "$branch "
+}
+
+# Set the prompt.
+
+PROMPT=$'%{${fg[cyan]}%}%B%~%b $(git_prompt)'

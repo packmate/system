@@ -1,0 +1,36 @@
+[user]
+  name = Joshua Bergman-Cole
+  email = joshua.bergman.cole@gmail.com
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+
+[color "branch"]
+  current = yellow reverse
+  local = green
+  remote = cyan
+
+[color "diff"]
+  meta = yellow
+  frag = magenta bold
+  old = red
+  new = green bold
+
+[color "status"]
+  added = green
+  changed = yellow
+  untracked = cyan
+
+[credential]
+  # Use the Keychain to store Git passwords.
+  helper = osxkeychain
+
+[core]
+  excludesfile = ~/.gitignore
+  editor = /usr/local/bin/vim
+
+[push]
+  # Push current branch even if it hasn't been pushed before.
+  default = current

@@ -1,0 +1,46 @@
+# Unix
+alias mkdir='mkdir -p'
+alias l='ls'
+alias ll='ls -al'
+
+# Navigation
+alias dev='cd ~/Development'
+alias colab='cd ~/Development/colab'
+alias dotfiles='cd ~/Development/dotfiles'
+alias tendfire='cd ~/Development/tendfire'
+
+# JS Development
+alias go='sh ~/.tmux/develop.sh'
+alias wd='webdriver-manager start'
+
+# iOS
+alias ios='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+
+# Git - Checkouts
+alias gc='git checkout'
+alias gb='git checkout -b'
+
+# Git - Staging
+alias ga='git add -A'
+
+# Git - Diffs
+alias gd='git diff'
+alias gdc='git diff --cached'
+
+# Git - Committing
+alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
+alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
+alias snap='git add -A . && git commit -m "Snapshot"'
+
+# Git - Logs
+alias gl='git log --pretty=oneline --abbrev-commit --graph --decorate'
+
+# Git - Gravy
+# `g` does `git status` when not given a command.
+function g {
+  if [[ $# > 0 ]]; then
+    git $@
+  else
+    git status -sb
+  fi
+}

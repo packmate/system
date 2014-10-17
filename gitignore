@@ -1,0 +1,14 @@
+# Bundler
+.bundle/
+
+# Mac OS X
+.DS_Store
+
+# Temp directories.
+tmp/
+
+# SASS
+.sass-cache/
+
+# Node
+node_modules/
