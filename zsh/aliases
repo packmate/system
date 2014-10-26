@@ -7,14 +7,15 @@ alias ll='ls -al'
 alias dev='cd ~/Development'
 alias colab='cd ~/Development/colab'
 alias dotfiles='cd ~/Development/dotfiles'
+alias exli='cd ~/Development/colab/exli'
 alias tendfire='cd ~/Development/tendfire'
 
 # JS Development
 alias go='sh ~/.tmux/develop.sh'
-alias wd='webdriver-manager start'
+alias wd='start-selenium'
 
 # iOS
-alias ios='open /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Applications/iPhone\ Simulator.app'
+alias ios='open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app'
 
 # Git - Checkouts
 alias gc='git checkout'
