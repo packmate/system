@@ -7,6 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles:
+Bundle 'altercation/vim-colors-solarized'
 Bundle 'danro/rename.vim'
 Bundle 'digitaltoad/vim-jade'
 Bundle 'jgdavey/tslime.vim'
