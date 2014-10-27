@@ -1,11 +1,6 @@
 " Set color scheme.
-if $TERM_PROGRAM =~ "iTerm"
-  set background=light
-  colorscheme solarized
-else
-  set background=dark
-  colorscheme jellybeans
-endif
+set background=dark
+colorscheme jellybeans
 
 " Highlight current line.
 set cursorline
