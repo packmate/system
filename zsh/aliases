@@ -10,8 +10,8 @@ alias dotfiles='cd ~/Development/dotfiles'
 alias exli='cd ~/Development/colab/exli'
 alias tendfire='cd ~/Development/tendfire'
 
-# JS Development
-alias go='sh ~/.tmux/develop.sh'
+# JS/Node Development
+alias watch="npm run watch"
 alias wd='start-selenium'
 
 # iOS
