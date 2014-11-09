@@ -7,7 +7,7 @@ alias ll='ls -al'
 alias dev='cd ~/Development'
 alias colab='cd ~/Development/colab'
 alias dotfiles='cd ~/Development/dotfiles'
-alias exli='cd ~/Development/colab/exli'
+alias exli='cd ~/Development/colab/pollinate'
 alias tendfire='cd ~/Development/tendfire'
 
 # JS/Node Development
