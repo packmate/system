@@ -8,3 +8,6 @@ set expandtab
 
 " Show whitespace.
 set list listchars=tab:»·,trail:·
+
+" Line up equals signs.
+map <Leader>= :Tabularize /=<cr>
