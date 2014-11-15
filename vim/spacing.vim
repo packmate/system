@@ -9,5 +9,8 @@ set expandtab
 " Show whitespace.
 set list listchars=tab:»·,trail:·
 
-" Line up equals signs.
-map <Leader>= :Tabularize /=<cr>
+" Line up first equals signs.
+map <Leader>= :Tabularize /^[^=]*\zs=<cr>
+
+" Line up first colons.
+map <Leader>: :Tabularize /^[^:]*\zs:<cr>
