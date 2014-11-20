@@ -11,7 +11,8 @@ alias exli='cd ~/Development/colab/pollinate'
 alias tendfire='cd ~/Development/tendfire'
 
 # JS/Node Development
-alias watch="npm run watch"
+alias cowboy="npm run cowboy"
+alias develop="npm run develop"
 alias wd='start-selenium'
 
 # iOS
