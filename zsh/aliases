@@ -5,15 +5,21 @@ alias ll='ls -al'
 
 # Navigation
 alias dev='cd ~/Development'
-alias colab='cd ~/Development/colab'
 alias dotfiles='cd ~/Development/dotfiles'
-alias exli='cd ~/Development/colab/pollinate'
 alias tendfire='cd ~/Development/tendfire'
+
+# Navigation - CoLab Projects
+alias colab='cd ~/Development/colab'
+alias exli='cd ~/Development/colab/pollinate'
+alias gn='cd ~/Development/colab/givenext'
 
 # JS/Node Development
 alias cowboy="npm run cowboy"
 alias develop="npm run develop"
 alias wd='start-selenium'
+
+# Postgres
+alias pgstart='postgres -D /usr/local/var/postgres'
 
 # iOS
 alias ios='open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app'
