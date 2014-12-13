@@ -4,6 +4,9 @@ bindkey -v
 # Use Homebrew.
 export PATH=/usr/local/bin:$PATH
 
+# Use rbenv.
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # Initialize rbenv.
+
 # Aliases
 source $HOME/.zsh/aliases
 source $HOME/.zsh/prompt
