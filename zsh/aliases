@@ -18,8 +18,9 @@ alias cowboy="npm run cowboy"
 alias develop="npm run develop"
 alias wd='start-selenium'
 
-# Postgres
+# Databases
 alias pgstart='postgres -D /usr/local/var/postgres'
+alias mongo='mongod --config /usr/local/etc/mongod.conf'
 
 # iOS
 alias ios='open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app'
@@ -52,3 +53,8 @@ function g {
     git status -sb
   fi
 }
+
+# Rails
+alias be='bundle exec'
+alias dbmp='bundle exec rake db:migrate && bundle exec rake db:test:prepare'
+alias rs='bundle exec rspec --color'
