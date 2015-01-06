@@ -16,7 +16,7 @@ alias gn='cd ~/Development/colab/givenext'
 # JS/Node Development
 alias cowboy="npm run cowboy"
 alias develop="npm run develop"
-alias wd='start-selenium'
+alias wd='selenium-server -p 4444'
 
 # Databases
 alias pgstart='postgres -D /usr/local/var/postgres'
