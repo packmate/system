@@ -10,7 +10,7 @@ alias tendfire='cd ~/Development/tendfire'
 
 # Navigation - CoLab Projects
 alias colab='cd ~/Development/colab'
-alias exli='cd ~/Development/colab/pollinate'
+alias pn='cd ~/Development/colab/pollinate'
 alias gn='cd ~/Development/colab/givenext'
 
 # JS/Node Development
