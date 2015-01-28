@@ -14,3 +14,6 @@ map <Leader>= :Tabularize /^[^=]*\zs=<cr>
 
 " Line up first colons.
 map <Leader>: :Tabularize /^[^:]*\zs:<cr>
+
+" Sort current indentation level.
+map <Leader>s gsii<cr>
