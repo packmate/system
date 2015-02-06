@@ -7,16 +7,19 @@ alias ll='ls -al'
 alias dev='cd ~/Development'
 alias dotfiles='cd ~/Development/dotfiles'
 alias tendfire='cd ~/Development/tendfire'
-
-# Navigation - CoLab Projects
-alias colab='cd ~/Development/colab'
-alias pn='cd ~/Development/colab/pollinate'
-alias gn='cd ~/Development/colab/givenext'
+alias pn='cd ~/Development/pollinate'
+alias pna='cd ~/Development/pollinate/pollinate-api'
+alias pnn='cd ~/Development/pollinate/pollinate-native'
+alias kp='cd ~/Development/kp'
 
 # JS/Node Development
 alias cowboy="npm run cowboy"
 alias develop="npm run develop"
 alias wd='selenium-server -p 4444'
+
+# Cordova Development
+alias unreloader="(cd ./native; cordova plugins rm pro.fing.cordova.gapreload)"
+alias reloader="(cd ./native; cordova plugins add pro.fing.cordova.gapreload)"
 
 # Databases
 alias pgstart='postgres -D /usr/local/var/postgres'
