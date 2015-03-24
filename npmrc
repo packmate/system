@@ -1,0 +1,4 @@
+; ------------------------------------------------
+; Command line defaults.
+
+loglevel = 'silent'
