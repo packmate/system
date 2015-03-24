@@ -6,16 +6,15 @@ alias ll='ls -al'
 # Navigation
 alias dev='cd ~/Development'
 alias dotfiles='cd ~/Development/dotfiles'
-alias tendfire='cd ~/Development/tendfire'
+
+# Navigation - Pollinate
 alias pn='cd ~/Development/pollinate'
 alias pna='cd ~/Development/pollinate/pollinate-api'
+alias pnd='cd ~/Development/pollinate/pollinate-dashboard'
 alias pnn='cd ~/Development/pollinate/pollinate-native'
-alias kp='cd ~/Development/kp'
 
 # JS/Node Development
-alias cowboy="npm run cowboy"
-alias develop="npm run develop"
-alias wd='selenium-server -p 4444'
+alias wd='webdriver-manager start'
 
 # Cordova Development
 alias unreloader="(cd ./native; cordova plugins rm pro.fing.cordova.gapreload)"
@@ -26,7 +25,7 @@ alias pgstart='postgres -D /usr/local/var/postgres'
 alias mongo='mongod --config /usr/local/etc/mongod.conf'
 
 # iOS
-alias ios='open /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app'
+alias ios='open -n /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app'
 
 # Git - Checkouts
 alias gc='git checkout'
@@ -42,7 +41,7 @@ alias gdc='git diff --cached'
 # Git - Committing
 alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
 alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
-alias snap='git add -A . && git commit -m "Snapshot"'
+alias todo='git add TODO.md && git commit -m "Update TODO."'
 
 # Git - Logs
 alias gl='git log --pretty=oneline --abbrev-commit --graph --decorate'
@@ -56,8 +55,3 @@ function g {
     git status -sb
   fi
 }
-
-# Rails
-alias be='bundle exec'
-alias dbmp='bundle exec rake db:migrate && bundle exec rake db:test:prepare'
-alias rs='bundle exec rspec --color'

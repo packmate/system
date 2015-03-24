@@ -18,6 +18,10 @@ map <Leader>f :CtrlPClearCache<cr>:CtrlP<cr>
 " Fuzzy file refinement.
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules\|build' }
 
+" Save easily.
+map <Leader>w :w<cr>
+map <Leader>a :wa<cr>
+
 " NERDTree for directory traversal.
 map <Leader>t :NERDTreeToggle<cr>
 

@@ -7,6 +7,10 @@ export PATH=/usr/local/bin:$PATH
 # Use rbenv.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # Initialize rbenv.
 
+# Use nvm.
+source $(brew --prefix nvm)/nvm.sh
+export NVM_DIR=~/.nvm
+
 # Aliases
 source $HOME/.zsh/aliases
 source $HOME/.zsh/prompt
