@@ -27,7 +27,7 @@ windows:
       layout: main-vertical
       panes:
         - vim
-        - sleep 15; bundle exec rake spec
+        - sleep 45; bundle exec rake spec
   - ui-edit: cd ui; vim
   - ui-cmd: cd ui
   - engine:
