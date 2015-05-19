@@ -8,8 +8,8 @@ export PATH=/usr/local/bin:$PATH
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # Initialize rbenv.
 
 # Use nvm.
-source $(brew --prefix nvm)/nvm.sh
 export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
 
 # Aliases
 source $HOME/.zsh/aliases

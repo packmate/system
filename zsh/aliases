@@ -9,9 +9,12 @@ alias dotfiles='cd ~/Development/dotfiles'
 
 # Navigation - Pollinate
 alias pn='cd ~/Development/pollinate'
-alias pna='cd ~/Development/pollinate/pollinate-api'
-alias pnd='cd ~/Development/pollinate/pollinate-dashboard'
-alias pnn='cd ~/Development/pollinate/pollinate-native'
+alias pna='cd ~/Development/pollinate/api'
+alias pni='cd ~/Development/pollinate/practice-ios'
+alias pnp='cd ~/Development/pollinate/practice'
+alias pnt='cd ~/Development/pollinate/tests'
+alias pnw='cd ~/Development/pollinate/practice-web'
+alias pnu='cd ~/Development/pollinate/ui'
 
 # JS/Node Development
 alias wd='webdriver-manager start'
@@ -19,6 +22,9 @@ alias wd='webdriver-manager start'
 # Cordova Development
 alias unreloader="(cd ./native; cordova plugins rm pro.fing.cordova.gapreload)"
 alias reloader="(cd ./native; cordova plugins add pro.fing.cordova.gapreload)"
+
+# Ruby/Rails
+alias be='bundle exec'
 
 # Databases
 alias pgstart='postgres -D /usr/local/var/postgres'
@@ -42,6 +48,7 @@ alias gdc='git diff --cached'
 alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
 alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
 alias todo='git add TODO.md && git commit -m "Update TODO."'
+alias readme='git add README.md && git commit -m "Update README."'
 
 # Git - Logs
 alias gl='git log --pretty=oneline --abbrev-commit --graph --decorate'
