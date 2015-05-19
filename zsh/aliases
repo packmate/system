@@ -8,13 +8,16 @@ alias dev='cd ~/Development'
 alias dotfiles='cd ~/Development/dotfiles'
 
 # Navigation - Pollinate
+alias pollinate='mux pollinate'
+
 alias pn='cd ~/Development/pollinate'
 alias pna='cd ~/Development/pollinate/api'
 alias pni='cd ~/Development/pollinate/practice-ios'
-alias pnp='cd ~/Development/pollinate/practice'
+alias pnp='cd ~/Development/pollinate/ui/practice'
+alias pnpv='cd ~/Development/pollinate/ui/provide'
 alias pnt='cd ~/Development/pollinate/tests'
-alias pnw='cd ~/Development/pollinate/practice-web'
 alias pnu='cd ~/Development/pollinate/ui'
+alias pnw='cd ~/Development/pollinate/practice-web'
 
 # JS/Node Development
 alias wd='webdriver-manager start'
