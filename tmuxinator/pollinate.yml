@@ -22,16 +22,35 @@ root: ~/Development/pollinate
 # startup_window: logs
 
 windows:
-  - tests:
-      root: ~/Development/pollinate/tests
+  # - ui-e2e:
+  #     root: ~/Development/pollinate/tests
+  #     layout: main-vertical
+  #     panes:
+  #       - vim
+  #       - sleep 30; bundle exec rake spec
+
+  - ui:
+      root: ~/Development/pollinate/ui
+      panes:
+        - vim
+
+  - ui-cmd:
+      root: ~/Development/pollinate/ui
+      layout: main-vertical
+      panes:
+        -
+        - foreman start
+
+  - api:
+      root: ~/Development/pollinate/api
       layout: main-vertical
       panes:
         - vim
-        - sleep 45; bundle exec rake spec
-  - ui-edit: cd ui; vim
-  - ui-cmd: cd ui
-  - engine:
+        - bundle exec rake spec
+
+  - api-cmd:
+      root: ~/Development/pollinate/api
       layout: main-horizontal
       panes:
-        - foreman start
-        - cd api; bundle exec rails console
+        - bundle exec rails server -p 3001
+        - bundle exec rails console
