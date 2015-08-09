@@ -12,13 +12,14 @@ alias pollinate='mux pollinate'
 
 alias pn='cd ~/Development/pollinate'
 alias pna='cd ~/Development/pollinate/api'
-alias pni='cd ~/Development/pollinate/practice-ios'
-alias pnp='cd ~/Development/pollinate/ui/practice'
+alias pnc='cd ~/Development/pollinate/ui/common'
 alias pne='cd ~/Development/pollinate/ui/enroll'
-alias pnpv='cd ~/Development/pollinate/ui/provide'
+alias pnp='cd ~/Development/pollinate/ui/practice'
+alias pnpi='cd ~/Development/pollinate/practice-ios'
+alias pnpr='cd ~/Development/pollinate/ui/provide'
+alias pnpw='cd ~/Development/pollinate/practice-web'
 alias pnt='cd ~/Development/pollinate/tests'
 alias pnu='cd ~/Development/pollinate/ui'
-alias pnw='cd ~/Development/pollinate/practice-web'
 
 # JS/Node Development
 alias wd='webdriver-manager start'
@@ -53,6 +54,9 @@ alias gcm='git commit --allow-empty -m' # Allow inputting a message after the al
 alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
 alias todo='git add TODO.md && git commit -m "Update TODO."'
 alias readme='git add README.md && git commit -m "Update README."'
+
+# Git - Deploying
+alias gp='git push'
 
 # Git - Logs
 alias gl='git log --pretty=oneline --abbrev-commit --graph --decorate'
