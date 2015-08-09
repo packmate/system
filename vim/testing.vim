@@ -20,3 +20,15 @@ map <Leader>0 :call Send_to_Tmux("clear\nbundle exec rake spec\n")<CR>
 
 " Close current command in tmux.
 nnoremap <Leader>c :call Send_to_Tmux("^C")<CR>
+
+" Open spec from file in vertical split, or vice-versa.
+
+function SwitchSpecContext()
+  if expand('%:r') =~ 'spec'
+    exec ":sp " . substitute(expand('%:r'), "spec", "coffee", "")
+  else
+    exec ":sp " . expand('%:r') . ".spec.coffee"
+  endif
+endfunction
+
+map <Leader>x :call SwitchSpecContext()<CR>
