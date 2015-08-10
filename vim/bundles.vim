@@ -7,7 +7,6 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " Bundles:
-Bundle 'altercation/vim-colors-solarized'
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'danro/rename.vim'
 Bundle 'digitaltoad/vim-jade'
@@ -19,7 +18,6 @@ Bundle 'kana/vim-textobj-user'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
-Bundle 'mintplant/vim-literate-coffeescript'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
 Bundle 'plasticboy/vim-markdown'
