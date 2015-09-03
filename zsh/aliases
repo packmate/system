@@ -14,12 +14,14 @@ alias pn='cd ~/Development/pollinate'
 alias pna='cd ~/Development/pollinate/api'
 alias pnc='cd ~/Development/pollinate/ui/common'
 alias pne='cd ~/Development/pollinate/ui/enroll'
+alias pnn='cd ~/Development/pollinate/ui/practice/native'
 alias pnp='cd ~/Development/pollinate/ui/practice'
-alias pnpi='cd ~/Development/pollinate/practice-ios'
 alias pnpr='cd ~/Development/pollinate/ui/provide'
-alias pnpw='cd ~/Development/pollinate/practice-web'
-alias pnt='cd ~/Development/pollinate/tests'
 alias pnu='cd ~/Development/pollinate/ui'
+
+# Deployment
+alias stage='gulp build --web --staging && gulp deploy --web --staging'
+alias release='gulp build --web --production && gulp deploy --web --production'
 
 # JS/Node Development
 alias wd='webdriver-manager start'
@@ -29,6 +31,7 @@ alias unreloader="(cd ./native; cordova plugins rm pro.fing.cordova.gapreload)"
 alias reloader="(cd ./native; cordova plugins add pro.fing.cordova.gapreload)"
 
 # Ruby/Rails
+alias b='bundle'
 alias be='bundle exec'
 
 # Databases
