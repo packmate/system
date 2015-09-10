@@ -1,6 +1,5 @@
-set hlsearch    " Highlight search results.
-set ignorecase  " Don't worry about case when searching.
-set incsearch   " Search as you type (incremental searching).
+set hlsearch  " Highlight search results.
+set incsearch " Search as you type (incremental searching).
 
 " Clear the search buffer when hitting return.
 function! MapCR()
