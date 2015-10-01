@@ -16,9 +16,9 @@ nmap fd :tabp<cr>
 map <Leader>f :CtrlPClearCache<cr>:CtrlP<cr>
 
 " Fuzzy file refinement.
-let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|build$\|native$\|bower_components$' }
-let g:ctrlp_max_files     = 0
-let g:ctrlp_max_depth     = 500
+let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|build$\|platforms$\|plugins$\|www$\|bower_components$' }
+let g:ctrlp_max_files = 0
+let g:ctrlp_max_depth = 500
 
 " Save easily.
 map <Leader>w :w<cr>
