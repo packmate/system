@@ -16,7 +16,7 @@ map <Leader>l <Plug>RunFocusedSpec
 map <Leader>rr <Plug>RunMostRecentSpec
 
 " Run all specs.
-map <Leader>0 :call Send_to_Tmux("clear\nbundle exec rake spec\n")<CR>
+map <Leader>0 :call Send_to_Tmux("clear\nbundle exec rspec features\n")<CR>
 
 " Close current command in tmux.
 nnoremap <Leader>c :call Send_to_Tmux("^C")<CR>
