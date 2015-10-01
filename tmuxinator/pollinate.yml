@@ -23,38 +23,36 @@ root: ~/Development/pollinate
 
 windows:
   - e2e:
-      root: ~/Development/pollinate/ui/tests/e2e
-      layout: 9e27,159x41,0,0{95x41,0,0,0,63x41,96,0[63x38,96,0,12,63x2,96,39,14]}
+      root: ~/Development/pollinate/ui-v3/tests/e2e
+      layout: 535e,230x52,0,0{155x52,0,0,0,74x52,156,0,3}
       panes:
         - vim
-        - sleep 10; bundle exec rake spec
-        - sc
+        - sleep 10; bundle exec rspec features
 
-  - ui:
-      root: ~/Development/pollinate/ui
-      layout: 5509,212x50,0,0{144x50,0,0,2,67x50,145,0,5}
+  - ui-unit:
+      root: ~/Development/pollinate/ui-v3
+      layout: d360,230x52,0,0{155x52,0,0,1,74x52,156,0,4}
       panes:
         - vim
-        - cd tests/unit; npm run watch-specs
+        - gulp test:units:watch
 
   - ui-cmd:
-      root: ~/Development/pollinate/ui
-      layout: ba23,212x50,0,0{144x50,0,0,1,67x50,145,0[67x25,145,0,4,67x24,145,26,8]}
+      root: ~/Development/pollinate/ui-v3
+      layout: dfb8,230x52,0,0{115x52,0,0,2,114x52,116,0,5}
       panes:
         -
-        - foreman start
-        - cd practice/native; ionic emulate ios -lc
+        - gulp
 
-  - api:
+  - api-unit:
       root: ~/Development/pollinate/api
-      layout: 5509,212x50,0,0{144x50,0,0,2,67x50,145,0,5}
+      layout: 536c,230x52,0,0{155x52,0,0,6,74x52,156,0,7}
       panes:
         - vim
         - bundle exec rake spec
 
   - api-cmd:
       root: ~/Development/pollinate/api
-      layout: bf93,212x50,0,0{98x50,0,0,6,113x50,99,0[113x25,99,0,10,113x24,99,26,11]}
+      layout: 3e76,230x52,0,0{115x52,0,0,8,114x52,116,0[114x26,116,0,9,114x25,116,27,10]}
       panes:
         -
         - bundle exec rails s
