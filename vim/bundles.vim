@@ -24,6 +24,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-surround'
 Bundle 'wavded/vim-stylus'
 
 " Required by Vundle.
