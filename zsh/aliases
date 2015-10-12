@@ -12,23 +12,7 @@ alias pollinate='mux pollinate'
 
 alias pn='cd ~/Development/pollinate'
 alias pna='cd ~/Development/pollinate/api'
-alias pnc='cd ~/Development/pollinate/ui/common'
-alias pne='cd ~/Development/pollinate/ui/enroll'
-alias pnn='cd ~/Development/pollinate/ui/practice/native'
-alias pnp='cd ~/Development/pollinate/ui/practice'
-alias pnpr='cd ~/Development/pollinate/ui/provide'
-alias pnu='cd ~/Development/pollinate/ui'
-
-# Deployment
-alias stage='gulp build --web --staging && gulp deploy --web --staging'
-alias release='gulp build --web --production && gulp deploy --web --production'
-
-# JS/Node Development
-alias wd='webdriver-manager start'
-
-# Cordova Development
-alias unreloader="(cd ./native; cordova plugins rm pro.fing.cordova.gapreload)"
-alias reloader="(cd ./native; cordova plugins add pro.fing.cordova.gapreload)"
+alias pnu='cd ~/Development/pollinate/ui-v3'
 
 # Ruby/Rails
 alias b='bundle'
@@ -55,8 +39,8 @@ alias gdc='git diff --cached'
 # Git - Committing
 alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
 alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
-alias todo='git add TODO.md && git commit -m "Update TODO."'
-alias readme='git add README.md && git commit -m "Update README."'
+alias todo='git add TODO.md && git commit -m "[Doc] Update TODO."'
+alias readme='git add README.md && git commit -m "[Doc] Update README."'
 
 # Git - Deploying
 alias gp='git push'
