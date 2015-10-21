@@ -6,17 +6,17 @@ let g:spec_runner_dispatcher = 'call Send_to_Tmux("clear\nbundle exec {command}\
 " Run the current spec file.
 map <Leader>o <Plug>RunCurrentSpecFile
 
-" Run the current spec file.
-map <Leader>o <Plug>RunCurrentSpecFile
-
 " Run the current line in a spec.
 map <Leader>l <Plug>RunFocusedSpec
 
 " Run the most recent spec.
 map <Leader>rr <Plug>RunMostRecentSpec
 
+" Run common specs.
+map <Leader>0 :call Send_to_Tmux("clear\nbundle exec rspec features --tag ~native --tag ~manual\n")<CR>
+
 " Run all specs.
-map <Leader>0 :call Send_to_Tmux("clear\nbundle exec rspec features\n")<CR>
+map <Leader>- :call Send_to_Tmux("clear\nbundle exec rspec features\n")<CR>
 
 " Close current command in tmux.
 nnoremap <Leader>c :call Send_to_Tmux("^C")<CR>

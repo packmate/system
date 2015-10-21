@@ -14,6 +14,9 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # Initialize rbenv.
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# Load sensitive data.
+source $HOME/.zsh/env
+
 # Aliases
 source $HOME/.zsh/aliases
 source $HOME/.zsh/prompt
