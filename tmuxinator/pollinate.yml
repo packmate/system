@@ -24,10 +24,11 @@ root: ~/Development/pollinate
 windows:
   - e2e:
       root: ~/Development/pollinate/ui-v3/tests/e2e
-      layout: 535e,230x52,0,0{155x52,0,0,0,74x52,156,0,3}
+      layout: db3b,212x50,0,0{146x50,0,0,0,65x50,147,0[65x45,147,0,5,65x4,147,46,11]}
       panes:
         - vim
         - sleep 10; bundle exec rspec features
+        - appium
 
   - ui-unit:
       root: ~/Development/pollinate/ui-v3
