@@ -16,4 +16,4 @@ git_prompt() {
 
 # Set the prompt.
 
-PROMPT=$'%{${fg[cyan]}%}%B%~%b $(git_prompt)'
+PROMPT=$'%{${fg[cyan]}%}%~%b $(git_prompt)'
