@@ -1,0 +1,5 @@
+# Ignore files in this directory, but keep the structure
+# as a build dependency.
+
+*
+!.gitignore
