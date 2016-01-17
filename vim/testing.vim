@@ -1,34 +1,71 @@
-" https://github.com/gabebw/vim-spec-runner
+nnoremap <Leader>0 :call RunAllTests()<CR>
+nnoremap <Leader>l :call RunCurrentLineInTest()<CR>
+nnoremap <Leader>o :call RunCurrentTest()<CR>
+nnoremap <Leader>rr :call Rerun()<CR>
 
-" Use tslime.vim:
-let g:spec_runner_dispatcher = 'call Send_to_Tmux("clear\nbundle exec {command}\n")'
+" -----------------------------------------------
+" Test Runner Functions
 
-" Run the current spec file.
-map <Leader>o <Plug>RunCurrentSpecFile
+function! RunAllTests()
+  write
 
-" Run the current line in a spec.
-map <Leader>l <Plug>RunFocusedSpec
-
-" Run the most recent spec.
-map <Leader>rr <Plug>RunMostRecentSpec
-
-" Run common specs.
-map <Leader>0 :call Send_to_Tmux("clear\nbundle exec rspec features --tag ~native --tag ~manual\n")<CR>
-
-" Run all specs.
-map <Leader>- :call Send_to_Tmux("clear\nbundle exec rspec features\n")<CR>
-
-" Close current command in tmux.
-nnoremap <Leader>c :call Send_to_Tmux("^C")<CR>
-
-" Open spec from file in vertical split, or vice-versa.
-
-function SwitchSpecContext()
-  if expand('%:r') =~ 'spec'
-    exec ":sp " . substitute(expand('%:r'), "spec", "coffee", "")
-  else
-    exec ":sp " . expand('%:r') . ".spec.coffee"
+  if s:isRspec()
+    call s:Tmux("bundle exec rspec ./")
+  elseif s:isMocha()
+    call s:Tmux("mocha ./app/**/*.spec.coffee --compilers coffee:coffee-react/register")
   endif
 endfunction
 
-map <Leader>x :call SwitchSpecContext()<CR>
+function! RunCurrentTest()
+  write
+
+  if s:isRspec()
+    call s:Tmux("bundle exec rspec " . expand('%:p'))
+  elseif s:isMocha()
+    call s:Tmux("mocha " . expand('%:p') . " --compilers coffee:coffee-react/register")
+  endif
+endfunction
+
+function! RunCurrentLineInTest()
+  write
+
+  if s:isRspec()
+    call s:Tmux("bundle exec rspec " . expand('%:p') . ':' . line('.'))
+  elseif s:isMocha()
+    call s:Tmux("mocha " . expand('%:p') . " --compilers coffee:coffee-react/register " . "--grep " . GetQuotedAbove())
+  endif
+endfunction
+
+function! Rerun()
+  call s:Tmux("!-2")
+endfunction
+
+" -----------------------------------------------
+" Helper Functions
+
+function! s:isMocha()
+  return match(expand("%"), "spec.coffee$") != -1
+endfunction
+
+function! s:isRspec()
+  return match(expand("%"), "_spec.rb$") != -1 || match(expand("%"), ".feature$") != -1
+endfunction
+
+function! s:GetQuotedAbove()
+  let lnum = line('.')
+
+  while lnum > 0
+    let quoted = matchstr(getline(lnum), "'[^']*'")
+    if ! empty(quoted)
+      return quoted
+    endif
+    let lnum -= 1
+  endwhile
+
+  return ''
+endfunction
+
+function! s:Tmux(command_string)
+  call Send_to_Tmux("clear\n")
+  call Send_to_Tmux(a:command_string . "\n")
+endfunction

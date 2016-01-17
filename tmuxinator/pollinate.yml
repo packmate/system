@@ -3,31 +3,13 @@
 name: pollinate
 root: ~/Development/pollinate
 
-# Optional tmux socket
-# socket_name: foo
-
-# Runs before everything. Use it to start daemons etc.
-# pre: sudo /etc/rc.d/mysqld start
-
-# Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
-# pre_window: rbenv shell 2.0.0-p247
-
-# Pass command line options to tmux. Useful for specifying a different tmux.conf.
-# tmux_options: -f ~/.tmux.mac.conf
-
-# Change the command to call tmux.  This can be used by derivatives/wrappers like byobu.
-# tmux_command: byobu
-
-# Specifies (by name or index) which window will be selected on project startup. If not set, the first window is used.
-# startup_window: logs
-
 windows:
   - e2e:
       root: ~/Development/pollinate/ui-v3/tests/e2e
       layout: db3b,212x50,0,0{146x50,0,0,0,65x50,147,0[65x45,147,0,5,65x4,147,46,11]}
       panes:
         - vim
-        - sleep 10; bundle exec rspec features
+        - sleep 15; bundle exec rspec features
         - appium
 
   - ui-unit:
@@ -35,7 +17,7 @@ windows:
       layout: d360,230x52,0,0{155x52,0,0,1,74x52,156,0,4}
       panes:
         - vim
-        - gulp test:units:watch
+        - sleep 15; gulp test:units:watch
 
   - ui-cmd:
       root: ~/Development/pollinate/ui-v3
