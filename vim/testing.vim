@@ -12,7 +12,7 @@ function! RunAllTests()
   if s:isRspec()
     call s:Tmux("bundle exec rspec ./")
   elseif s:isMocha()
-    call s:Tmux("mocha ./app/**/*.spec.coffee --compilers coffee:coffee-react/register")
+    call s:Tmux("mocha ./app/**/*.spec.coffee --compilers coffee:coffee-react/register --require tests/unit-helper")
   endif
 endfunction
 
@@ -22,7 +22,7 @@ function! RunCurrentTest()
   if s:isRspec()
     call s:Tmux("bundle exec rspec " . expand('%:p'))
   elseif s:isMocha()
-    call s:Tmux("mocha " . expand('%:p') . " --compilers coffee:coffee-react/register")
+    call s:Tmux("mocha " . expand('%:p') . " --compilers coffee:coffee-react/register --require tests/unit-helper")
   endif
 endfunction
 
@@ -32,7 +32,7 @@ function! RunCurrentLineInTest()
   if s:isRspec()
     call s:Tmux("bundle exec rspec " . expand('%:p') . ':' . line('.'))
   elseif s:isMocha()
-    call s:Tmux("mocha " . expand('%:p') . " --compilers coffee:coffee-react/register " . "--grep " . GetQuotedAbove())
+    call s:Tmux("mocha " . expand('%:p') . " --compilers coffee:coffee-react/register --require tests/unit-helper " . "--grep " . s:GetQuotedAbove())
   endif
 endfunction
 

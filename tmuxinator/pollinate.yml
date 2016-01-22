@@ -5,7 +5,7 @@ root: ~/Development/pollinate
 
 windows:
   - e2e:
-      root: ~/Development/pollinate/ui-v3/tests/e2e
+      root: ~/Development/pollinate-ui-v3/tests/e2e
       layout: db3b,212x50,0,0{146x50,0,0,0,65x50,147,0[65x45,147,0,5,65x4,147,46,11]}
       panes:
         - vim
@@ -13,28 +13,28 @@ windows:
         - appium
 
   - ui-unit:
-      root: ~/Development/pollinate/ui-v3
+      root: ~/Development/pollinate-ui-v3
       layout: d360,230x52,0,0{155x52,0,0,1,74x52,156,0,4}
       panes:
         - vim
         - sleep 15; gulp test:units:watch
 
   - ui-cmd:
-      root: ~/Development/pollinate/ui-v3
+      root: ~/Development/pollinate-ui-v3
       layout: dfb8,230x52,0,0{115x52,0,0,2,114x52,116,0,5}
       panes:
         -
         - gulp
 
   - api-unit:
-      root: ~/Development/pollinate/api
+      root: ~/Development/pollinate-api
       layout: 536c,230x52,0,0{155x52,0,0,6,74x52,156,0,7}
       panes:
         - vim
         - bundle exec rake spec
 
   - api-cmd:
-      root: ~/Development/pollinate/api
+      root: ~/Development/pollinate-api
       layout: 3e76,230x52,0,0{115x52,0,0,8,114x52,116,0[114x26,116,0,9,114x25,116,27,10]}
       panes:
         -

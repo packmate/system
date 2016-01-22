@@ -12,11 +12,11 @@ alias tend='cd ~/Development/tend'
 
 # Navigation - Pollinate
 alias pollinate='mux pollinate'
+alias pollinate4='mux pollinate4'
 
 alias pn4='cd ~/Development/pollinate-v4'
-alias pna='cd ~/Development/pollinate/api'
-alias pnd='cd ~/Development/pollinate'
-alias pnu='cd ~/Development/pollinate/ui-v3'
+alias pna='cd ~/Development/pollinate-api'
+alias pnu='cd ~/Development/pollinate-ui-v3'
 
 # Ruby/Rails
 alias b='bundle'

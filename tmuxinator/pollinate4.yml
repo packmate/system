@@ -1,0 +1,46 @@
+# ~/.tmuxinator/pollinate4.yml
+
+name: pollinate
+root: ~/Development/pollinate
+
+windows:
+  - feature:
+      root: ~/Development/pollinate-v4/tests
+      layout: 3e8e,158x42,0,0{103x42,0,0,0,54x42,104,0,2}
+      panes:
+        - vim
+        - sleep 10; bundle exec rspec features
+
+  - ui-unit:
+      root: ~/Development/pollinate-v4/ui/discover
+      layout: be90,158x42,0,0{103x42,0,0,1,54x42,104,0,3}
+      panes:
+        - vim
+        -
+
+  - v4-cmd:
+      root: ~/Development/pollinate-v4
+      layout: b7c1,158x42,0,0,4
+      panes:
+        -
+
+  - ui-build:
+      root: ~/Development/pollinate-v4/ui/tasks
+      layout: b7c2,158x42,0,0,5
+      panes:
+        - gulp dev
+
+  - v3-api-unit:
+      root: ~/Development/pollinate-api
+      layout: be9c,158x42,0,0{103x42,0,0,6,54x42,104,0,7}
+      panes:
+        - vim
+        - bundle exec rspec spec
+
+  - v3-api-cmd:
+      root: ~/Development/pollinate-api
+      layout: 47d8,158x42,0,0{79x42,0,0,9,78x42,80,0[78x21,80,0,10,78x20,80,22,11]}
+      panes:
+        -
+        - bundle exec rails server
+        - bundle exec rails console
