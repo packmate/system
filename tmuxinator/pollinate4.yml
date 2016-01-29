@@ -1,7 +1,7 @@
 # ~/.tmuxinator/pollinate4.yml
 
-name: pollinate
-root: ~/Development/pollinate
+name: pollinate4
+root: ~/Development/pollinate-v4
 
 windows:
   - feature:
