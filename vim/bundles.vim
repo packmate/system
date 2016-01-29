@@ -26,6 +26,7 @@ Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'wavded/vim-stylus'
+Bundle 'pangloss/vim-javascript'
 
 " Required by Vundle.
 filetype plugin indent on

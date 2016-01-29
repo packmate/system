@@ -16,5 +16,8 @@ let g:indent_guides_enable_on_vim_startup = 1
 autocmd colorscheme * hi IndentGuidesEven ctermbg=236
 autocmd colorscheme * hi IndentGuidesOdd ctermbg=235
 
+" Highlight JS object keys.
+hi def link jsObjectKey Label
+
 " Colorize!
 syntax on
