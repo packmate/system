@@ -11,7 +11,7 @@ alias dotfiles='cd ~/Development/dotfiles'
 alias tend='cd ~/Development/tend'
 
 # Navigation - Pollinate
-alias pollinate='mux pollinate'
+alias pollinate3='mux pollinate'
 alias pollinate4='mux pollinate4'
 
 alias pn4='cd ~/Development/pollinate-v4'
