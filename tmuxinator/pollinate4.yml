@@ -4,43 +4,37 @@ name: pollinate4
 root: ~/Development/pollinate-v4
 
 windows:
-  - feature:
-      root: ~/Development/pollinate-v4/tests
-      layout: 3e8e,158x42,0,0{103x42,0,0,0,54x42,104,0,2}
+  - features:
+      root: ~/Development/pollinate-v4/features
+      layout: d05a,255x66,0,0{167x66,0,0,0,87x66,168,0,1}
       panes:
         - vim
-        - sleep 10; bundle exec rspec features
+        - sleep 15; bundle exec rspec suite
 
-  - ui-unit:
-      root: ~/Development/pollinate-v4/ui/discover
-      layout: be90,158x42,0,0{103x42,0,0,1,54x42,104,0,3}
+  - ui:
+      root: ~/Development/pollinate-v4/ui
+      layout: d05f,255x66,0,0{167x66,0,0,2,87x66,168,0,3}
       panes:
         - vim
-        -
+        - cd tests; mocha ../**/*.spec.coffee --compilers coffee:coffee-react/register --require unit-helper
 
-  - v4-cmd:
-      root: ~/Development/pollinate-v4
-      layout: b7c1,158x42,0,0,4
-      panes:
-        -
-
-  - ui-build:
-      root: ~/Development/pollinate-v4/ui/tasks
-      layout: b7c2,158x42,0,0,5
-      panes:
-        - gulp dev
-
-  - v3-api-unit:
-      root: ~/Development/pollinate-api
-      layout: be9c,158x42,0,0{103x42,0,0,6,54x42,104,0,7}
+  - api:
+      root: ~/Development/pollinate-v4/api
+      layout: d064,255x66,0,0{167x66,0,0,4,87x66,168,0,5}
       panes:
         - vim
         - bundle exec rspec spec
 
-  - v3-api-cmd:
-      root: ~/Development/pollinate-api
-      layout: 47d8,158x42,0,0{79x42,0,0,9,78x42,80,0[78x21,80,0,10,78x20,80,22,11]}
+  - tasks:
+      root: ~/Development/pollinate-v4
+      layout: 4947,255x66,0,0{127x66,0,0,6,127x66,128,0[127x33,128,0,7,127x32,128,34,8]}
       panes:
-        -
-        - bundle exec rails server
-        - bundle exec rails console
+        - cd cli; ./pollinate serve ui
+        - cd cli; ./pollinate serve api
+        - cd api; bundle exec rails c
+
+  - cmd:
+      root: ~/Development/pollinate-v4
+      layout: ca66,255x66,0,0,9
+      panes:
+        - 
