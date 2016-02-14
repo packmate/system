@@ -19,5 +19,8 @@ autocmd colorscheme * hi IndentGuidesOdd ctermbg=235
 " Highlight JS object keys.
 hi def link jsObjectKey Label
 
+" Know about EJS files.
+au BufNewFile,BufRead *.ejs set filetype=html
+
 " Colorize!
 syntax on
