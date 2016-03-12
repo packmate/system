@@ -12,7 +12,7 @@ function! RunAllTests()
   if s:isRspec()
     call s:Tmux("bundle exec rspec ./ --tag ~native --tag ~manual")
   elseif s:isMocha()
-    call s:Tmux("mocha ../**/*.spec.coffee --compilers coffee:coffee-react/register --require unit-helper")
+    call s:Tmux("mocha ../**/*.spec.coffee --compilers coffee:coffee-react/register --require unit-helper --reporter dot")
   endif
 endfunction
 
