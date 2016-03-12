@@ -12,4 +12,3 @@ source $HOME/.vim/navigation.vim
 source $HOME/.vim/search.vim
 source $HOME/.vim/spacing.vim
 source $HOME/.vim/testing.vim
-source $HOME/.vim/workflow.vim
