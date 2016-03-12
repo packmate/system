@@ -21,6 +21,7 @@ alias pnu='cd ~/Development/pollinate-ui-v3'
 # Ruby/Rails
 alias b='bundle'
 alias be='bundle exec'
+alias dbmp='bundle exec rails db:migrate db:test:prepare'
 
 # Databases
 alias pgstart='postgres -D /usr/local/var/postgres'
