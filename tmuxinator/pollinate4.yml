@@ -9,7 +9,7 @@ windows:
       layout: d05a,255x66,0,0{167x66,0,0,0,87x66,168,0,1}
       panes:
         - vim
-        - sleep 15; bundle exec rspec suite
+        - sleep 10; bundle exec rspec ./ --tag ~native --tag ~manual
 
   - ui:
       root: ~/Development/pollinate-v4/ui
