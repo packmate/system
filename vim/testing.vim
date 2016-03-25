@@ -2,7 +2,8 @@ nnoremap <Leader>0 :call RunAllTests()<CR>
 nnoremap <Leader>l :call RunCurrentLineInTest()<CR>
 nnoremap <Leader>o :call RunCurrentTest()<CR>
 nnoremap <Leader>rr :call Rerun()<CR>
-nnoremap <Leader>x :call SwitchSpecContext()<CR>
+nnoremap <Leader>z :call SwitchSpecContext(':sp')<CR>
+nnoremap <Leader>x :call SwitchSpecContext(':vsp')<CR>
 nnoremap <Leader>y :call SwitchToStyles()<CR>
 
 " -----------------------------------------------
@@ -49,16 +50,16 @@ endfunction
 " -----------------------------------------------
 " Workflow Functions
 
-" Open spec from file in vertical split, or vice-versa.
-function! SwitchSpecContext()
+" Open spec from file in split.
+function! SwitchSpecContext(splitter)
   if s:isCoffeeSpec()
-    exec ":sp " . s:getCoffeeFileFromCoffeeSpec()
+    exec a:splitter . " " . s:getCoffeeFileFromCoffeeSpec()
   elseif s:isCoffee()
-    exec ":sp " . s:getCoffeeSpecFromCoffeeFile()
+    exec a:splitter . " " . s:getCoffeeSpecFromCoffeeFile()
   elseif s:isRubySpec()
-    exec ":sp " . s:getRubyFileFromRubySpec()
+    exec a:splitter . " " . s:getRubyFileFromRubySpec()
   elseif s:isRuby()
-    exec ":sp " . s:getRubySpecFromRubyFile()
+    exec a:splitter . " " . s:getRubySpecFromRubyFile()
   endif
 endfunction
 

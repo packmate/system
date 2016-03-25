@@ -1,6 +1,10 @@
 " Enable deletion of previous characters in line.
 set bs=2
 
+" Default splitting behavior.
+set splitright
+set splitbelow
+
 " Window traversal.
 noremap <C-h> <C-w>h
 noremap <C-j> <C-w>j
