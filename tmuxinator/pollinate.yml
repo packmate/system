@@ -1,42 +1,42 @@
-# ~/.tmuxinator/pollinate.yml
+# ~/.tmuxinator/pollinate4.yml
 
-name: pollinate
-root: ~/Development/pollinate-ui-v3
+name: pollinate4
+root: ~/Development/pollinate-v4
 
 windows:
-  - e2e:
-      root: ~/Development/pollinate-ui-v3/tests/e2e
-      layout: db3b,212x50,0,0{146x50,0,0,0,65x50,147,0[65x45,147,0,5,65x4,147,46,11]}
+  - features:
+      root: ~/Development/pollinate-v4/features
+      layout: 9882,255x63,0,0{173x63,0,0,0,81x63,174,0[81x60,174,0,5,81x2,174,61,6]}
       panes:
         - vim
-        - sleep 15; bundle exec rspec features
+        - sleep 10; bundle exec rspec suite --tag ~native --tag ~manual
         - appium
 
-  - ui-unit:
-      root: ~/Development/pollinate-ui-v3
-      layout: d360,230x52,0,0{155x52,0,0,1,74x52,156,0,4}
+  - ui:
+      root: ~/Development/pollinate-v4/ui
+      layout: 9354,255x63,0,0{173x63,0,0,1,81x63,174,0[81x55,174,0,7,81x7,174,56,14]}
       panes:
         - vim
-        - sleep 15; gulp test:units:watch
+        - cd tests; mocha ../**/*.spec.coffee --compilers coffee:coffee-react/register --require unit-helper --reporter dot
+        - cd tasks
 
-  - ui-cmd:
-      root: ~/Development/pollinate-ui-v3
-      layout: dfb8,230x52,0,0{115x52,0,0,2,114x52,116,0,5}
-      panes:
-        -
-        - gulp
-
-  - api-unit:
-      root: ~/Development/pollinate-api
-      layout: 536c,230x52,0,0{155x52,0,0,6,74x52,156,0,7}
+  - api:
+      root: ~/Development/pollinate-v4/api
+      layout: 9374,255x63,0,0{173x63,0,0,2,81x63,174,0[81x55,174,0,8,81x7,174,56,12]}
       panes:
         - vim
-        - bundle exec rake spec
-
-  - api-cmd:
-      root: ~/Development/pollinate-api
-      layout: 3e76,230x52,0,0{115x52,0,0,8,114x52,116,0[114x26,116,0,9,114x25,116,27,10]}
-      panes:
-        -
-        - bundle exec rails s
+        - bundle exec rspec spec
         - bundle exec rails c
+
+  - servers:
+      root: ~/Development/pollinate-v4/cli
+      layout: 1bf5,255x63,0,0{127x63,0,0,3,127x63,128,0,9}
+      panes:
+        - ./pollinate serve ui
+        - ./pollinate serve api
+
+  - cmd:
+      root: ~/Development/pollinate-v4
+      layout: be61,255x63,0,0,4
+      panes:
+        - 
