@@ -11,17 +11,14 @@ alias dotfiles='cd ~/Development/dotfiles'
 alias tend='cd ~/Development/tend'
 
 # Navigation - Pollinate
-alias pollinate3='mux pollinate'
-alias pollinate4='mux pollinate4'
-
-alias pn4='cd ~/Development/pollinate-v4'
-alias pna='cd ~/Development/pollinate-api'
-alias pnu='cd ~/Development/pollinate-ui-v3'
+alias pollinate='mux pollinate'
+alias pn='cd ~/Development/pollinate-v4'
 
 # Ruby/Rails
 alias b='bundle'
 alias be='bundle exec'
 alias dbmp='bundle exec rails db:migrate db:test:prepare'
+alias dbr='bundle exec rails db:environment:set RAILS_ENV=development db:drop db:create db:schema:load db:migrate db:test:prepare'
 
 # Databases
 alias pgstart='postgres -D /usr/local/var/postgres'
