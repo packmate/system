@@ -6,7 +6,7 @@ root: ~/Development/pollinate-v4
 windows:
   - features:
       root: ~/Development/pollinate-v4/features
-      layout: 9882,255x63,0,0{173x63,0,0,0,81x63,174,0[81x60,174,0,5,81x2,174,61,6]}
+      layout: d0bc,255x63,0,0{181x63,0,0,0,73x63,182,0[73x60,182,0,5,73x2,182,61,6]}
       panes:
         - vim
         - sleep 10; bundle exec rspec suite --tag ~native --tag ~manual
@@ -14,7 +14,7 @@ windows:
 
   - ui:
       root: ~/Development/pollinate-v4/ui
-      layout: 9354,255x63,0,0{173x63,0,0,1,81x63,174,0[81x55,174,0,7,81x7,174,56,14]}
+      layout: 9e1f,255x63,0,0{181x63,0,0,1,73x63,182,0[73x55,182,0,7,73x7,182,56,8]}
       panes:
         - vim
         - cd tests; mocha ../**/*.spec.coffee --compilers coffee:coffee-react/register --require unit-helper --reporter dot
@@ -22,7 +22,7 @@ windows:
 
   - api:
       root: ~/Development/pollinate-v4/api
-      layout: 9374,255x63,0,0{173x63,0,0,2,81x63,174,0[81x55,174,0,8,81x7,174,56,12]}
+      layout: af91,255x63,0,0{181x63,0,0,2,73x63,182,0[73x55,182,0,9,73x7,182,56,10]}
       panes:
         - vim
         - bundle exec rspec spec
@@ -30,7 +30,7 @@ windows:
 
   - servers:
       root: ~/Development/pollinate-v4/cli
-      layout: 1bf5,255x63,0,0{127x63,0,0,3,127x63,128,0,9}
+      layout: 8e4f,255x63,0,0{127x63,0,0,3,127x63,128,0,11}
       panes:
         - ./pollinate serve ui
         - ./pollinate serve api
