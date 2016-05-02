@@ -40,3 +40,13 @@ windows:
       layout: be61,255x63,0,0,4
       panes:
         - 
+
+  - schedulers:
+      root: ~/Development/pollinate-v4/api
+      layout: 4310,179x50,0,0{89x50,0,0[89x21,0,0,25,89x16,0,22,27,89x11,0,39,28],89x50,90,0[89x25,90,0,22,89x24,90,26,23]}
+      panes:
+        - redis-server
+        - bundle exec resque-web --no-launch --foreground
+        - bundle exec mailcatcher
+        - foreman start scheduler
+        - foreman start worker
