@@ -16,3 +16,6 @@ npm-debug.log
 
 # Bower
 bower_components/
+
+# Redis
+dump.rdb
