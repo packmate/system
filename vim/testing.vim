@@ -2,9 +2,9 @@ nnoremap <Leader>0 :call RunAllTests()<CR>
 nnoremap <Leader>l :call RunCurrentLineInTest()<CR>
 nnoremap <Leader>o :call RunCurrentTest()<CR>
 nnoremap <Leader>rr :call Rerun()<CR>
-nnoremap <Leader>z :call SwitchSpecContext(':sp')<CR>
 nnoremap <Leader>x :call SwitchSpecContext(':vsp')<CR>
-nnoremap <Leader>y :call SwitchToStyles()<CR>
+nnoremap <Leader>y :call SwitchStyleContext()<CR>
+nnoremap <Leader>z :call SwitchSpecContext(':sp')<CR>
 
 " -----------------------------------------------
 " Test Runner Functions
@@ -64,11 +64,13 @@ function! SwitchSpecContext(splitter)
 endfunction
 
 " Open stylesheet from file in horizontal split, or vice-versa.
-function! SwitchToStyles()
+function! SwitchStyleContext()
   if s:isCoffeeSpec()
     exec ":vsp " . substitute(expand('%:r'), "spec", "styl", "")
   elseif s:isCoffee()
     exec ":vsp " . expand('%:r') . ".styl"
+  elseif s:isStyle()
+    exec ":vsp " . s:getCoffeeFileFromStyle()
   endif
 endfunction
 
@@ -106,8 +108,16 @@ function! s:isCoffee()
   return expand('%') =~ '.coffee'
 endfunction
 
+function! s:isStyle()
+  return expand('%') =~ '.styl'
+endfunction
+
 function! s:getCoffeeSpecFromCoffeeFile()
   return expand('%:r') . ".spec.coffee"
+endfunction
+
+function! s:getCoffeeFileFromStyle()
+  return expand('%:r') . ".coffee"
 endfunction
 
 function! s:isRubySpec()
