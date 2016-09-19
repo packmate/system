@@ -7,13 +7,6 @@ alias ll='ls -al'
 alias dev='cd ~/Development'
 alias dotfiles='cd ~/Development/dotfiles'
 
-# Navigation - Tend
-alias tend='cd ~/Development/tend'
-
-# Navigation - Pollinate
-alias pollinate='mux pollinate'
-alias pn='cd ~/Development/pollinate-v4'
-
 # Ruby/Rails
 alias b='bundle'
 alias be='bundle exec'
@@ -23,10 +16,6 @@ alias dbr='bundle exec rails db:environment:set RAILS_ENV=development db:drop db
 # Databases
 alias pgstart='postgres -D /usr/local/var/postgres'
 alias mongo='mongod --config /usr/local/etc/mongod.conf'
-
-# iOS
-alias ios='open -n /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app'
-alias xios='open -n /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app --args -CurrentDeviceUDID AD0E1C1B-8EE4-423A-BA7C-781BC6A47113 & open -n /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app --args -CurrentDeviceUDID 94DEA1D3-316F-440C-9A07-925A0AAEAFFD & open -n /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app --args -CurrentDeviceUDID 1123B692-FAF6-46AC-BE22-DA920CFE9534 & open -n /Applications/Xcode.app/Contents/Developer/Applications/iOS\ Simulator.app --args -CurrentDeviceUDID 7E04F577-8DA2-4ACB-8917-60E788E62252'
 
 # Git - Checkouts
 alias gc='git checkout'
