@@ -18,15 +18,16 @@ Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
 Bundle 'mtscout6/vim-cjsx'
+Bundle 'mxw/vim-jsx.git'
 Bundle 'nanotech/jellybeans.vim'
 Bundle 'nathanaelkane/vim-indent-guides'
+Bundle 'pangloss/vim-javascript'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'scrooloose/nerdtree'
 Bundle 'tomtom/tcomment_vim'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'wavded/vim-stylus'
-Bundle 'pangloss/vim-javascript'
 
 " Required by Vundle.
 filetype plugin indent on

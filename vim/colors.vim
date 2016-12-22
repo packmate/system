@@ -22,5 +22,8 @@ hi def link jsObjectKey Label
 " Know about EJS files.
 au BufNewFile,BufRead *.ejs set filetype=html
 
+" Don't require .jsx extension for JSX highlighting.
+let g:jsx_ext_required = 0
+
 " Colorize!
 syntax on
