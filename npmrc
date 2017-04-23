@@ -1,1 +1,2 @@
+# Prevent npm-debug.log creation.
 loglevel=silent

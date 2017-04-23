@@ -1,12 +1,16 @@
-" Use Vundle.
+" Required by Vundle before bundles are defined.
 filetype off
+
+" Include and initialize Vundle.
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " Use Vundle to manage Vundle.
 Bundle 'gmarik/vundle'
 
-" Bundles:
+" -----------------------------------------------------
+" Bundles
+
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'danro/rename.vim'
 Bundle 'digitaltoad/vim-jade'
@@ -24,5 +28,7 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'wavded/vim-stylus'
 
-" Required by Vundle.
+" -----------------------------------------------------
+
+" Required by Vundle after bundles are defined.
 filetype plugin indent on

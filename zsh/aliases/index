@@ -1,0 +1,5 @@
+source $HOME/.zsh/aliases/databases
+source $HOME/.zsh/aliases/git
+source $HOME/.zsh/aliases/navigation
+source $HOME/.zsh/aliases/ruby
+source $HOME/.zsh/aliases/unix

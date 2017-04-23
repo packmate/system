@@ -1,0 +1,6 @@
+# Listing
+alias l='ls'
+alias ll='ls -al'
+
+# Always do recursive folder creation.
+alias mkdir='mkdir -p'

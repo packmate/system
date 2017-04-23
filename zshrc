@@ -1,3 +1,6 @@
+source $HOME/.zsh/aliases/index
+source $HOME/.zsh/prompt
+
 # Use Vim mode for command line.
 bindkey -v
 
@@ -8,7 +11,7 @@ export EDITOR='vim'
 export PATH=/usr/local/bin:$PATH
 
 # Use rbenv.
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi # Initialize rbenv.
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Use nvm.
 export NVM_DIR=~/.nvm
@@ -17,11 +20,7 @@ source $(brew --prefix nvm)/nvm.sh
 # Load sensitive data.
 source $HOME/.zsh/env
 
-# Aliases
-source $HOME/.zsh/aliases
-source $HOME/.zsh/prompt
-
-# Initialize colors.
+# Use colors.
 autoload -U colors
 colors
 

@@ -1,0 +1,30 @@
+# `g` does `git status` when not given a command.
+function g {
+  if [[ $# > 0 ]]; then
+    git $@
+  else
+    git status -sb
+  fi
+}
+
+# Checkouts
+alias gc='git checkout'
+alias gb='git checkout -b'
+
+# Staging
+alias ga='git add -A'
+
+# Diffs
+alias gd='git diff'
+alias gdc='git diff --cached'
+
+# Committing
+alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
+alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
+alias grm='git add README.md && git commit -m "[Doc] Update README."'
+
+# Deploying
+alias gp='git push'
+
+# Pretty Logs
+alias gl='git log --pretty=oneline --abbrev-commit --graph --decorate'
