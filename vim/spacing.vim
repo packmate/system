@@ -9,11 +9,8 @@ set expandtab
 " Show whitespace.
 set list listchars=tab:»·,trail:·
 
-" Line up first equals signs.
-map <Leader>= :Tabularize /^[^=]*\zs=<cr>
-
-" Line up first colons.
-map <Leader>: :Tabularize /^[^:]*\zs:<cr>
+" Sort within parentheses (for argument lists).
+map <Leader>0 gsi(<cr>
 
 " Sort current indentation level.
 map <Leader>s gsii<cr>

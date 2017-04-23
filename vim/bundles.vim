@@ -28,6 +28,10 @@ Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-surround'
 Bundle 'wavded/vim-stylus'
 
+" Required by vim-sort-motion for indentation-level sorting.
+Bundle 'kana/vim-textobj-user'
+Bundle 'kana/vim-textobj-indent'
+
 " -----------------------------------------------------
 
 " Required by Vundle after bundles are defined.

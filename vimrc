@@ -4,6 +4,9 @@
 set nocompatible
 let mapleader = " "
 
+" Quickly update with new configuration.
+map <Leader>` :source ~/.vimrc<cr>
+
 " -----------------------------------------------------
 " Foundations
 
