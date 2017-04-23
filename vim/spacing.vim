@@ -9,8 +9,8 @@ set expandtab
 " Show whitespace.
 set list listchars=tab:»·,trail:·
 
-" Sort within parentheses (for argument lists).
-map <Leader>0 gsi(<cr>
+" Sort within braces.
+map <Leader>[ gsi{<cr>
 
 " Sort current indentation level.
 map <Leader>s gsii<cr>
