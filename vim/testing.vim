@@ -2,6 +2,8 @@ nnoremap <Leader>0 :call RunAllUnitTests()<CR>
 nnoremap <Leader>l :call RunCurrentLineInUnitTest()<CR>
 nnoremap <Leader>o :call RunCurrentUnitTest()<CR>
 nnoremap <Leader>rr :call Rerun()<CR>
+nnoremap <Leader>x :call SwitchSpecContext(':vsp')<CR>
+nnoremap <Leader>z :call SwitchSpecContext(':sp')<CR>
 
 " -----------------------------------------------------
 " Basic Tmux Functions
@@ -15,6 +17,21 @@ endfunction
 " Re-run most recent terminal command.
 function! Rerun()
   call s:Tmux("!-2")
+endfunction
+
+" -----------------------------------------------------
+" Spec File Switching Functions
+
+function! s:FileNameMatches(text)
+  return expand('%') =~ a:text
+endfunction
+
+function! SwitchSpecContext(splitter)
+  if s:FileNameMatches('.spec.js')
+    exec a:splitter . " " . substitute(expand('%:r'), "spec", "js", "")
+  elseif s:FileNameMatches('.js')
+    exec a:splitter . " " . expand('%:r') . ".spec.js"
+  endif
 endfunction
 
 " -----------------------------------------------------
