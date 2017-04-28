@@ -19,3 +19,6 @@ bower_components/
 
 # Redis
 dump.rdb
+
+# Temporary task lists.
+TODO.md
