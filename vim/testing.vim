@@ -26,11 +26,23 @@ function! s:FileNameMatches(text)
   return expand('%') =~ a:text
 endfunction
 
+function! s:GetFileNameFromSpecName()
+  return substitute(expand('%:p'), ".spec.js", ".js", "")
+endfunction
+
+function! s:GetSpecNameFromFileName()
+  return substitute(expand('%:p'), ".js", ".spec.js", "")
+endfunction
+
+function! s:IsSpecFile()
+  return s:FileNameMatches('.spec.js')
+endfunction
+
 function! SwitchSpecContext(splitter)
-  if s:FileNameMatches('.spec.js')
-    exec a:splitter . " " . substitute(expand('%:r'), "spec", "js", "")
-  elseif s:FileNameMatches('.js')
-    exec a:splitter . " " . expand('%:r') . ".spec.js"
+  if s:IsSpecFile()
+    exec a:splitter . " " . s:GetFileNameFromSpecName()
+  else
+    exec a:splitter . " " . s:GetSpecNameFromFileName()
   endif
 endfunction
 
@@ -66,13 +78,19 @@ endfunction
 
 function! RunCurrentUnitTest(...)
   let options = ''
+  let unit_test_file_name = expand('%:p')
 
   if exists("a:1")
     let options = a:1
   endif
 
   write
-  call s:Mocha(expand('%:p'), options)
+
+  if !s:IsSpecFile()
+    let unit_test_file_name = s:GetSpecNameFromFileName()
+  endif
+
+  call s:Mocha(unit_test_file_name, options)
 endfunction
 
 function! RunCurrentLineInUnitTest()
