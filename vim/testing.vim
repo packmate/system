@@ -73,7 +73,7 @@ endfunction
 
 function! RunAllUnitTests()
   write
-  call s:Mocha("**/*.spec.js")
+  call s:Mocha("**/*.spec.js", '')
 endfunction
 
 function! RunCurrentUnitTest(...)
