@@ -7,9 +7,15 @@ function g {
   fi
 }
 
+# Branching
+alias gb='git checkout -b'
+
+function gbd {
+  git branch -d $@ && git branch -dr origin/$@ && git push origin --delete $@
+}
+
 # Checkouts
 alias gc='git checkout'
-alias gb='git checkout -b'
 
 # Staging
 alias ga='git add -A'
