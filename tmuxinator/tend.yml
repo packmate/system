@@ -1,0 +1,41 @@
+# ~/.tmuxinator/tend.yml
+
+name: tend
+root: ~/Development/tend
+
+windows:
+  - features:
+      root: ~/Development/tend/features
+      layout: a78a,255x66,0,0{191x66,0,0,0,63x66,192,0,1}
+      panes:
+        - vim
+        - 
+
+  - ui:
+      root: ~/Development/tend/ui
+      layout: a4c6,255x66,0,0{191x66,0,0,2,63x66,192,0[63x57,192,0,3,63x8,192,58,10]}
+      panes:
+        - vim
+        - 
+        - yarn run dev
+
+  - api:
+      root: ~/Development/tend/api
+      layout: c98e,255x66,0,0{191x66,0,0,5,63x66,192,0[63x57,192,0,6,63x8,192,58,9]}
+      panes:
+        - vim
+        - 
+        - 
+
+  - cli:
+      root: ~/Development/pollinate-v4/cli
+      layout: ca5a,255x66,0,0{191x66,0,0,11,63x66,192,0,12}
+      panes:
+        - vim
+        - 
+
+  - cmd:
+      root: ~/Development/tend
+      layout: 6562,255x66,0,0,13
+      panes:
+        - 
