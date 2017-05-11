@@ -10,6 +10,9 @@ export EDITOR='vim'
 # Use Homebrew.
 export PATH=/usr/local/bin:$PATH
 
+# Use Yarn.
+export PATH="$HOME/.yarn/bin:$PATH"
+
 # Use rbenv.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
