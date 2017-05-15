@@ -31,7 +31,7 @@ windows:
       root: ~/Development/tend
       layout: ca5a,255x66,0,0{191x66,0,0,11,63x66,192,0,12}
       panes:
-        - vim cli
+        - cd cli; vim
         - 
 
   - cmd:
