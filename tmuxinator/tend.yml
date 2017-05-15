@@ -17,7 +17,7 @@ windows:
       panes:
         - vim
         - 
-        - yarn run dev
+        - yarn dev
 
   - api:
       root: ~/Development/tend/api
@@ -25,7 +25,7 @@ windows:
       panes:
         - vim
         - 
-        - 
+        - yarn dev
 
   - cli:
       root: ~/Development/tend
