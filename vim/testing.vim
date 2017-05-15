@@ -161,7 +161,7 @@ function! s:IsSpecFile()
 endfunction
 
 function! s:IsFeature()
-  return s:FileNameMatches('.feature')
+  return s:FileNameMatches('\.feature')
 endfunction
 
 function! s:FileNameMatches(text)
