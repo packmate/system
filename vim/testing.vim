@@ -111,7 +111,7 @@ endfunction
 
 function! RunAllUnitTests()
   write
-  call s:Mocha("**/*.spec.js", '')
+  call s:Mocha("$(find . -name '*.spec.js' ! -path '*node_modules*')", '')
 endfunction
 
 function! RunAllFeatures()
