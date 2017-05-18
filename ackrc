@@ -1,3 +1,4 @@
---ignore-dir=node_modules
---ignore-dir=build
 --ignore-dir=.bundle
+--ignore-dir=build
+--ignore-dir=node_modules
+--ignore-file=is:yarn.lock
