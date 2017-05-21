@@ -28,10 +28,17 @@ windows:
         - yarn dev
 
   - cli:
-      root: ~/Development/tend
+      root: ~/Development/tend/cli
       layout: ca5a,255x66,0,0{191x66,0,0,11,63x66,192,0,12}
       panes:
-        - cd cli; vim
+        - vim
+        - 
+
+  - shared:
+      root: ~/Development/tend/shared
+      layout: ca5a,255x66,0,0{191x66,0,0,11,63x66,192,0,12}
+      panes:
+        - vim
         - 
 
   - cmd:
