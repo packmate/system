@@ -17,13 +17,12 @@ nmap fg :tabn<cr>
 nmap fd :tabp<cr>
 
 " Use fuzzy file search.
-map <Leader>f :CtrlPClearCache<cr>:CtrlP<cr>
+map <Leader>f :CtrlPClearCache<cr>:CtrlP getcwd()<cr>
 
 let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|bundle$\|.git$\|build$\|platforms$\|plugins$\|www$\|bower_components$\|\.bundle$' }
 let g:ctrlp_max_depth = 500
 let g:ctrlp_max_files = 0
 let g:ctrlp_show_hidden = 1
-let g:ctrlp_working_path_mode = 'c'
 
 " Save easily.
 map <Leader>w :w<cr>
