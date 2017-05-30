@@ -6,13 +6,23 @@ root: ~/Development/tend
 windows:
   - features:
       root: ~/Development/tend/features
-      layout: a78a,255x66,0,0{191x66,0,0,0,63x66,192,0,1}
+      layout: e125,283x70,0,0{205x70,0,0,0,77x70,206,0[77x63,206,0,7,77x2,206,64,19,77x3,206,67,17]}
       panes:
         - vim
         - 
+        - selenium-standalone start
+        - appium
 
-  - ui:
-      root: ~/Development/tend/ui
+  - ui|sky:
+      root: ~/Development/tend/ui/sky
+      layout: a4c6,255x66,0,0{191x66,0,0,2,63x66,192,0[63x57,192,0,3,63x8,192,58,10]}
+      panes:
+        - vim
+        - 
+        - yarn dev
+
+  - ui|ground:
+      root: ~/Development/tend/ui/ground
       layout: a4c6,255x66,0,0{191x66,0,0,2,63x66,192,0[63x57,192,0,3,63x8,192,58,10]}
       panes:
         - vim

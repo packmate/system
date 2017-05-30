@@ -69,11 +69,11 @@ endfunction
 " Testing Functions
 
 function! s:Mocha(files, options)
-  call s:Tmux("node_modules/mocha/bin/mocha " . a:files . " --require ./alias --require test/world --compilers es6:babel-core/register " . a:options)
+  call s:Tmux("node_modules/mocha/bin/mocha " . a:files . " --require ./alias.js --require test/world --compilers es6:babel-core/register " . a:options)
 endfunction
 
 function! s:Cucumber(files)
-  call s:Tmux("./node_modules/cucumber/bin/cucumber.js " . a:files . " --require ./alias --require suite/world.js --require suite/**/*.ui.js --require suite/**/*.steps.js --fail-fast --compiler es6:babel-core/register")
+  call s:Tmux("./node_modules/cucumber/bin/cucumber.js " . a:files . " --require ./alias.js --require suite/world.js --require suite/**/*.ui.js --require suite/**/*.steps.js --fail-fast --compiler es6:babel-core/register")
 endfunction
 
 function! s:FindNameOfSpecForLine()
