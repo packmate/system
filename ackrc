@@ -1,4 +1,6 @@
 --ignore-dir=.bundle
+--ignore-dir=.happypack
 --ignore-dir=build
+--ignore-dir=dist
 --ignore-dir=node_modules
 --ignore-file=is:yarn.lock

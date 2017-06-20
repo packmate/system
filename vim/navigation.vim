@@ -19,7 +19,7 @@ nmap fd :tabp<cr>
 " Use fuzzy file search.
 map <Leader>f :CtrlPClearCache<cr>:CtrlP getcwd()<cr>
 
-let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|bundle$\|.git$\|build$\|platforms$\|plugins$\|www$\|bower_components$\|\.bundle$' }
+let g:ctrlp_custom_ignore = { 'dir': 'node_modules$\|dist$\|bundle$\|.git$\|build$\|platforms$\|plugins$\|www$\|bower_components$\|\.bundle$' }
 let g:ctrlp_max_depth = 500
 let g:ctrlp_max_files = 0
 let g:ctrlp_show_hidden = 1
