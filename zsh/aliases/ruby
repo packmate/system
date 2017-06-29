@@ -1,7 +1,0 @@
-# Bundling
-alias b='bundle'
-alias be='bundle exec'
-
-# Rails DB Management
-alias dbmp='bundle exec rails db:migrate db:test:prepare'
-alias dbr='bundle exec rails db:environment:set RAILS_ENV=development db:drop db:create db:schema:load db:migrate db:test:prepare'

@@ -1,2 +1,0 @@
-alias pg='postgres -D /usr/local/var/postgres'
-alias mgo='mongod --config /usr/local/etc/mongod.conf'

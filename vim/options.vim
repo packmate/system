@@ -4,7 +4,7 @@ set clipboard=unnamed " Use OS X system clipboard.
 " Remove delay after pressing escape key.
 set noesckeys
 
-" Don't worry about backup or swap files.
+" Don't generate backup or swap files.
 set nobackup
 set nowritebackup
 set noswapfile

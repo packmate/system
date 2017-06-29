@@ -1,24 +1,9 @@
-# Bundler
-.bundle/
-
 # Mac OS X
 .DS_Store
 
-# Temp directories.
+# Temporary directories.
 tmp/
-
-# SASS
-.sass-cache/
 
 # Node
 node_modules/
 npm-debug.log
-
-# Bower
-bower_components/
-
-# Redis
-dump.rdb
-
-# Temporary task lists.
-TODO.md

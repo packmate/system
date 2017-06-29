@@ -18,7 +18,8 @@ source $HOME/.vim/options.vim
 
 source $HOME/.vim/colors.vim
 source $HOME/.vim/completion.vim
+source $HOME/.vim/find.vim
 source $HOME/.vim/navigation.vim
 source $HOME/.vim/search.vim
+source $HOME/.vim/shortcuts.vim
 source $HOME/.vim/spacing.vim
-source $HOME/.vim/testing.vim
