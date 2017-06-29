@@ -13,7 +13,6 @@ Bundle 'gmarik/vundle'
 
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'danro/rename.vim'
-Bundle 'digitaltoad/vim-jade'
 Bundle 'jgdavey/tslime.vim'
 Bundle 'kien/ctrlp.vim'
 Bundle 'mileszs/ack.vim'
