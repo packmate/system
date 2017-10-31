@@ -7,7 +7,7 @@ get_git_branch() {
 
 git_prompt() {
   local branch_raw="$(get_git_branch)"
-  local branch="%{$fg[green]%}[$branch_raw]%{$reset_color%}"
+  local branch="%{$fg[green]%}($branch_raw)%{$reset_color%}"
 
   # Only show git information if there is at least one branch.
   [ -n "$branch_raw" ] && echo "$branch "
