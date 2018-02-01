@@ -1,3 +1,3 @@
+alias chronicle='tmuxinator chronicle'
 alias dev='cd ~/Development'
 alias dotfiles='cd ~/Development/dotfiles'
-alias tend='tmuxinator tend'
