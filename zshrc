@@ -17,6 +17,11 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
 
+# Use jenv.
+
+export PATH=$HOME/.jenv/bin:$PATH
+eval "$(jenv init -)"
+
 # Use ineo (Neo4J Instance Manager)
 export INEO_HOME=~/.ineo
 export PATH=$INEO_HOME/bin:$PATH
