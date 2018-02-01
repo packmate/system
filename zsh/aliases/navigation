@@ -1,3 +1,3 @@
 alias dev='cd ~/Development'
 alias dotfiles='cd ~/Development/dotfiles'
-alias mux='tmuxinator'
+alias tend='tmuxinator tend'
