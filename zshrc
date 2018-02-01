@@ -10,15 +10,16 @@ export EDITOR='vim'
 # Use Homebrew.
 export PATH=/usr/local/bin:$PATH
 
-# Use Yarn.
-export PATH="$HOME/.yarn/bin:$PATH"
-
 # Use rbenv.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Use nvm.
 export NVM_DIR=~/.nvm
 source $(brew --prefix nvm)/nvm.sh
+
+# Use ineo (Neo4J Instance Manager)
+export INEO_HOME=~/.ineo
+export PATH=$INEO_HOME/bin:$PATH
 
 # Load sensitive data.
 source $HOME/.zsh/env
