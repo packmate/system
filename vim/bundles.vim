@@ -11,6 +11,7 @@ Bundle 'gmarik/vundle'
 " -----------------------------------------------------
 " Bundles
 
+Bundle 'alvan/vim-closetag'
 Bundle 'christoomey/vim-sort-motion'
 Bundle 'danro/rename.vim'
 Bundle 'jgdavey/tslime.vim'
