@@ -14,3 +14,6 @@ map <Leader>[ gsi{<cr>
 
 " Sort current indentation level.
 map <Leader>s gsii<cr>
+
+" Re-indent inside block.
+map <Leader>= =i{
