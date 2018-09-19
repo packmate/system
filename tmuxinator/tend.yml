@@ -5,7 +5,7 @@ name: tend
 windows:
   - features:
       root: ~/Development/tend/features
-      layout: fd42,141x41,0,0{102x41,0,0,0,38x41,103,0[38x34,103,0,4,38x2,103,35,5,38x3,103,38,6]}
+      layout: bec9,189x50,0,0{126x50,0,0,0,62x50,127,0[62x43,127,0,5,62x2,127,44,6,62x3,127,47,7]}
       panes:
         - vim
         - npm run features:dev
@@ -14,7 +14,7 @@ windows:
 
   - ui:
       root: ~/Development/tend/ui
-      layout: fd42,141x41,0,0{102x41,0,0,0,38x41,103,0[38x34,103,0,4,38x2,103,35,5,38x3,103,38,6]}
+      layout: 604d,189x50,0,0{126x50,0,0,1,62x50,127,0[62x43,127,0,8,62x2,127,44,9,62x3,127,47,10]}
       panes:
         - vim
         - npm run ui:test:dev
@@ -23,7 +23,7 @@ windows:
 
   - api:
       root: ~/Development/tend/api
-      layout: fd42,141x41,0,0{102x41,0,0,0,38x41,103,0[38x34,103,0,4,38x2,103,35,5,38x3,103,38,6]}
+      layout: 6aa2,189x50,0,0{126x50,0,0,2,62x50,127,0[62x43,127,0,11,62x2,127,44,12,62x3,127,47,13]}
       panes:
         - vim
         - npm run api:test:dev
@@ -32,7 +32,13 @@ windows:
 
   - command:
       root: ~/Development/tend
-      layout: 876e,141x41,0,0{70x41,0,0,3,70x41,71,0,11}
+      layout: 9c81,189x50,0,0{94x50,0,0,3,94x50,95,0,14}
       panes:
         - 
         - vim scratch.md
+
+  - utility:
+      root: ~/Development/tend
+      layout: b301,189x50,0,0,4
+      panes:
+        - mdb
