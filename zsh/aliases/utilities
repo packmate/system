@@ -1,1 +1,7 @@
 alias mdb="mongod --config /usr/local/etc/mongod.conf"
+alias pgstart="pg_ctl -D /usr/local/var/postgres start"
+alias pgstop="pg_ctl -D /usr/local/var/postgres stop"
+
+function ncd {
+  cd $@ && npm i
+}
