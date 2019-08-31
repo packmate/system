@@ -24,3 +24,4 @@ source $HOME/.vim/search.vim
 source $HOME/.vim/shortcuts.vim
 source $HOME/.vim/spacing.vim
 source $HOME/.vim/terminal.vim
+source $HOME/.vim/snippets.vim
