@@ -1,0 +1,13 @@
+# Use rbenv.
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# Use nvm.
+export NVM_DIR=~/.nvm
+source $(brew --prefix nvm)/nvm.sh
+
+# Use jenv.
+export PATH=$HOME/.jenv/bin:$PATH
+eval "$(jenv init -)"
+
+# Use Homebrew.
+export PATH=/usr/local/bin:$PATH
