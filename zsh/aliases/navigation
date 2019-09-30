@@ -1,5 +1,6 @@
+alias b='tmuxinator basic'
 alias desk='cd ~/Desktop'
 alias dev='cd ~/Development'
 alias dotfiles='cd ~/Development/dotfiles'
-alias foundation='tmuxinator foundation'
+alias f='tmuxinator foundation'
 alias tf='cd ~/Development/thinkful'
