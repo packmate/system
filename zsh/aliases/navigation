@@ -1,6 +1,11 @@
+goToAndClear() {
+  cd $1 && clear
+}
+
 alias b='tmuxinator basic'
-alias desk='cd ~/Desktop'
-alias dev='cd ~/Development'
-alias dotfiles='cd ~/Development/dotfiles'
+alias d='goToAndClear ~/Desktop'
+alias dotfiles='goToAndClear ~/Development/dotfiles'
 alias f='tmuxinator foundation'
-alias tf='cd ~/Development/thinkful'
+alias gr='goToAndClear ~/Development/thinkful/grading'
+alias tf='goToAndClear ~/Development/thinkful'
+alias v='goToAndClear ~/Development'
