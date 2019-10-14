@@ -12,16 +12,19 @@ windows:
 
   - api:
       root: ./api
+      layout: 93ab,123x35,0,0{77x35,0,0,22,45x35,78,0[45x29,78,0,23,45x5,78,30,24]}
 
       panes:
         - vim
+        - cd ..; now dev
+        - 
 
   - root: 
       layout: 102d,123x35,0,0{77x35,0,0,2,45x35,78,0,7}
 
       panes:
-        - vim
-        - now dev
+        - vim now.json
+        - 
 
   - system:
       panes:
