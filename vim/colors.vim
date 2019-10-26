@@ -20,9 +20,10 @@ autocmd colorscheme * hi IndentGuidesOdd ctermbg=236
 " Don't require .jsx extension for JSX highlighting.
 let g:jsx_ext_required = 0
 
-" Use syntax highlighting for custom Svelte extension.
+" Custom filetypes.
 au BufNewFile,BufRead *.build set filetype=javascript
 au BufNewFile,BufRead *.sv set filetype=svelte
+au BufNewFile,BufRead *.test set filetype=json
 au BufNewFile,BufRead *.watch set filetype=json
 
 " Colorize!

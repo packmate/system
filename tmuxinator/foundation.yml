@@ -1,6 +1,15 @@
 name: <%= File.basename(Dir.getwd) %>
 
 windows:
+  - test:
+      root: ./tests
+      layout: 93ab,123x35,0,0{77x35,0,0,22,45x35,78,0[45x29,78,0,23,45x5,78,30,24]}
+
+      panes:
+        - vim
+        - npm run dev
+        - 
+
   - ui:
       root: ./ui
       layout: 93ab,123x35,0,0{77x35,0,0,22,45x35,78,0[45x29,78,0,23,45x5,78,30,24]}
