@@ -3,38 +3,41 @@ name: <%= File.basename(Dir.getwd) %>
 windows:
   - test:
       root: ./tests
-      layout: 93ab,123x35,0,0{77x35,0,0,22,45x35,78,0[45x29,78,0,23,45x5,78,30,24]}
+      layout: 6b14,122x35,0,0{84x35,0,0[84x33,0,0,0,84x1,0,34,14],37x35,85,0,5}
 
       panes:
         - vim
-        - npm run dev
         - 
+        - npm run dev
 
   - ui:
       root: ./ui
-      layout: 93ab,123x35,0,0{77x35,0,0,22,45x35,78,0[45x29,78,0,23,45x5,78,30,24]}
+      layout: 6b23,122x35,0,0{84x35,0,0[84x33,0,0,1,84x1,0,34,13],37x35,85,0,7}
 
       panes:
         - vim
-        - npm run dev
         - 
+        - npm run dev
 
   - api:
       root: ./api
-      layout: 93ab,123x35,0,0{77x35,0,0,22,45x35,78,0[45x29,78,0,23,45x5,78,30,24]}
+      layout: 6b32,122x35,0,0{84x35,0,0[84x33,0,0,2,84x1,0,34,12],37x35,85,0,9}
 
       panes:
         - vim
-        - cd ..; now dev
         - 
+        - npm run test:dev
 
   - root: 
-      layout: 102d,123x35,0,0{77x35,0,0,2,45x35,78,0,7}
+      layout: cad5,122x35,0,0{68x35,0,0,3,53x35,69,0,11}
 
       panes:
         - vim now.json
-        - 
+        - now dev
 
   - system:
+      layout: 7bfa,122x35,0,0[122x33,0,0,4,122x1,0,34,15]
+
       panes:
         - 
+        - mdb
