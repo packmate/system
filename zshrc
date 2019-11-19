@@ -2,6 +2,9 @@ source $HOME/.zsh/aliases/index
 source $HOME/.zsh/prompt
 source $HOME/.zsh/version-managers
 
+# Use UTC.
+export TZ=utc
+
 # Load sensitive data.
 source $HOME/.zsh/env
 
