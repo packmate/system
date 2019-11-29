@@ -42,7 +42,7 @@ windows:
       layout: 69fa,122x35,0,0[122x29,0,0,5,122x5,0,30,11]
 
       panes:
-        - cd ..; npm run dev
+        - cd ..; sleep 5 && npm run dev
         - 
 
   - root:

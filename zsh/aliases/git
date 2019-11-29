@@ -27,7 +27,6 @@ alias gdc='git diff --cached'
 # Committing
 alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
 alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
-alias grm='git add README.md && git commit -m "[Doc] Update README."'
 
 # Deploying
 alias gp='git push'
