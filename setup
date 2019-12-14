@@ -1,0 +1,19 @@
+#!/bin/bash
+
+DOTFILES="./dotfiles/"
+echo "[system] Linking dotfiles:"
+
+for file in $DOTFILES*; do
+  PATH=${file/${DOTFILES}/}
+  FROM="$PWD/dotfiles/$PATH"
+  TO="$HOME/.$PATH"
+
+  echo "[system] Linking $FROM to $TO."
+  /bin/ln -f -s $FROM $TO
+done
+
+echo "[system] Dotfiles linked."
+
+echo "[system] Creating ZSH environment file:"
+/usr/bin/touch $HOME/.zsh/env
+echo "[system] ZSH environment file created."
