@@ -1,56 +1,54 @@
 name: <%= File.basename(Dir.getwd) %>
 
 windows:
-  - test:
-      root: ./tests
+  - tests:
+      root: tests
+      layout: 4993,164x49,0,0{106x49,0,0,0,57x49,107,0[57x40,107,0,1,57x8,107,41,2]}
 
       panes:
         - vim
-
-  - test:log:
-      root: ./tests
-      layout: fef5,122x35,0,0[122x17,0,0,2,122x17,0,18,4]
-
-      panes:
-        - npm run dev
-        - cd ..; npm run dev:test
+        - npm run tests:develop
+        - 
 
   - ui:
-      root: ./ui
+      root: ui
+      layout: 8a59,164x49,0,0{106x49,0,0,3,57x49,107,0[57x40,107,0,6,57x8,107,41,7]}
 
       panes:
         - vim
+        - npm run tests:watch
+        - 
 
   - ui:log:
-      root: ./ui
-      layout: 69fa,122x35,0,0[122x29,0,0,5,122x5,0,30,11]
+      root: ui
 
       panes:
-        - npm run dev
-        - 
+        - npm run develop
 
   - api:
-      root: ./api
-      layout: 9025,122x35,0,0{77x35,0,0,8,44x35,78,0,9}
+      root: api
+      layout: 8a59,164x49,0,0{106x49,0,0,3,57x49,107,0[57x40,107,0,6,57x8,107,41,7]}
 
       panes:
         - vim
-        - npm run test:dev
+        - npm run tests:watch
 
   - api:log:
-      root: ./api
-      layout: 69fa,122x35,0,0[122x29,0,0,5,122x5,0,30,11]
+      root: api
 
       panes:
-        - cd ..; sleep 5 && npm run dev
-        - 
+        - npm run develop
 
   - root:
-      panes:
-        - vim now.json
+      layout: cb1a,164x49,0,0{106x49,0,0,13,57x49,107,0,15}
 
-  - system:
-      layout: fbfd,122x35,0,0[122x33,0,0,7,122x1,0,34,10]
       panes:
-        -
-        - mdb
+        - vim
+        - 
+
+  - tests:servers:
+      layout: 0fc8,164x49,0,0{82x49,0,0,13,81x49,83,0,14}
+
+      panes:
+        - cd ui; npm run develop:testing
+        - cd api; npm run serve:testing
