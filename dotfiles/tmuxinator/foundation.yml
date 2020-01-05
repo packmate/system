@@ -37,7 +37,7 @@ windows:
       root: api
 
       panes:
-        - npm run develop
+        - npm run serve:development
 
   - root:
       layout: cb1a,164x49,0,0{106x49,0,0,13,57x49,107,0,15}
