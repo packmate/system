@@ -6,4 +6,4 @@ let g:ctrlp_max_depth = 500
 let g:ctrlp_max_files = 0
 let g:ctrlp_show_hidden = 1
 
-let g:ctrlp_custom_ignore = { 'dir': '.git$\|node_modules$\|public$\|build$' }
+let g:ctrlp_custom_ignore = { 'dir': '.git$\|node_modules$\|build$' }
