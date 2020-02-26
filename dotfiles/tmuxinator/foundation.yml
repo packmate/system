@@ -32,6 +32,7 @@ windows:
       panes:
         - vim
         - npm run tests:watch
+        - 
 
   - api:log:
       root: api
