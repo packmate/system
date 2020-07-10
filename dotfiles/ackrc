@@ -1,4 +1,3 @@
 --ignore-dir=build
---ignore-dir=public
 --ignore-dir=node_modules
 --ignore-file=is:package-lock.json

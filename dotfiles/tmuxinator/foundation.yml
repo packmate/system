@@ -3,7 +3,7 @@ name: <%= File.basename(Dir.getwd) %>
 windows:
   - tests:
       root: tests
-      layout: 4993,164x49,0,0{106x49,0,0,0,57x49,107,0[57x40,107,0,1,57x8,107,41,2]}
+      layout: 8a59,164x49,0,0{106x49,0,0,3,57x49,107,0[57x40,107,0,6,57x8,107,41,7]}
 
       panes:
         - vim

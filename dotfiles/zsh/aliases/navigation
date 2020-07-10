@@ -4,9 +4,7 @@ goToAndClear() {
 
 alias b='tmuxinator basic'
 alias d='goToAndClear ~/Desktop'
-alias dotfiles='goToAndClear ~/Development/system/dotfiles'
+alias dotfiles='goToAndClear ~/Development/@packmate/system/dotfiles'
 alias f='tmuxinator foundation'
-alias fm='tmuxinator foundation-multiscreen'
-alias gr='goToAndClear ~/Development/thinkful/grading'
-alias gs='goToAndClear ~/Development/gatherseed'
+alias gr='goToAndClear ~/Development/@thinkful/grading'
 alias v='goToAndClear ~/Development'

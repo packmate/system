@@ -1,12 +1,9 @@
 name: <%= File.basename(Dir.getwd) %>
 
 windows:
-  - one:
-      layout: 93ab,123x35,0,0{77x35,0,0,22,45x35,78,0[45x29,78,0,23,45x5,78,30,24]}
+  - basic:
+      layout: 5c34,162x49,0,0{105x49,0,0,0,56x49,106,0,1}
 
       panes:
           - vim
           - 
-          - 
-
-  - two: 
