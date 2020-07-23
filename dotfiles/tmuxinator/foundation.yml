@@ -7,7 +7,7 @@ windows:
 
       panes:
         - vim
-        - npm run tests:watch
+        - npm run watch
         - 
 
   - ui:
@@ -16,14 +16,14 @@ windows:
 
       panes:
         - vim
-        - npm run tests:watch
+        - 
         - 
 
   - ui:log:
       root: ui
 
       panes:
-        - npm run ui:develop
+        - npm run watch
 
   - api:
       root: api
@@ -31,14 +31,14 @@ windows:
 
       panes:
         - vim
-        - npm run tests:watch
+        - 
         - 
 
   - api:log:
       root: api
 
       panes:
-        - npm run api:develop
+        - npm run watch
 
   - root:
       layout: cb1a,164x49,0,0{106x49,0,0,13,57x49,107,0,15}
@@ -51,5 +51,5 @@ windows:
       layout: 0fc8,164x49,0,0{82x49,0,0,13,81x49,83,0,14}
 
       panes:
-        - cd ui; npm run ui:develop:testing
-        - cd api; npm run api:develop:testing
+        - cd ui; npm run watch:testing
+        - cd api; npm run watch:testing
