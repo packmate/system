@@ -23,7 +23,7 @@ map <Leader>t :NERDTreeToggle<cr>
 let NERDTreeShowHidden=1
 
 " Ignore some files.
-let NERDTreeIgnore=[ '\.git$', '\.now$', '\.vercel$', 'node_modules$', 'package-lock\.json$' ]
+let NERDTreeIgnore=[ '\.git$', '\.vercel$', 'build$', 'node_modules$', 'package-lock\.json$' ]
 
 " Close out if the last buffer is a NERDTree.
 function! s:CloseIfOnlyNerdTreeLeft()
