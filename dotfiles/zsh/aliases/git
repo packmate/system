@@ -17,12 +17,15 @@ function gbd {
 # Checkouts
 alias gc='git checkout'
 
+# Cloning
+alias gg='git clone'
+
 # Staging
 alias ga='git add -A'
 
 # Diffs
-alias gd='git diff'
-alias gdc='git diff --cached'
+alias gd="git diff -- . ':!*package-lock.json'"
+alias gdc="git diff --cached -- . ':!*package-lock.json'"
 
 # Committing
 alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
