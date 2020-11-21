@@ -10,21 +10,6 @@ windows:
         - npm run watch
         - 
 
-  - ui:
-      root: ui
-      layout: 8a59,164x49,0,0{106x49,0,0,3,57x49,107,0[57x40,107,0,6,57x8,107,41,7]}
-
-      panes:
-        - vim
-        - 
-        - 
-
-  - ui:log:
-      root: ui
-
-      panes:
-        - npm run watch
-
   - api:
       root: api
       layout: 8a59,164x49,0,0{106x49,0,0,3,57x49,107,0[57x40,107,0,6,57x8,107,41,7]}
@@ -41,12 +26,14 @@ windows:
         - npm run watch
 
   - root:
+      layout: cb1a,164x49,0,0{106x49,0,0,13,57x49,107,0,15}
+
       panes:
+        - vim
         - 
 
-  - tests:servers:
-      layout: 0fc8,164x49,0,0{82x49,0,0,13,81x49,83,0,14}
+  - tests:server:
+      root: api
 
       panes:
-        - cd ui; npm run watch:testing
-        - cd api; npm run watch:testing
+        - npm run watch:testing

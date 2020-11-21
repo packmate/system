@@ -1,0 +1,9 @@
+name: <%= File.basename(Dir.getwd) %>
+
+windows:
+  - basic:
+      layout: 5c34,162x49,0,0{105x49,0,0,0,56x49,106,0,1}
+
+      panes:
+          - vim
+          - npm start
