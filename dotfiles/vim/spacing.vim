@@ -15,5 +15,11 @@ map <Leader>[ gsi{<cr>
 " Sort current indentation level.
 map <Leader>s gsii<cr>
 
+" Transform single line statement into multile line.
+map <Leader>{ gS<cr>
+
+" Transform multiline statement into single line.
+map <Leader>} gJ<cr>
+
 " Re-indent inside block.
 map <Leader>= =i{

@@ -11,6 +11,7 @@ Plugin 'VundleVim/Vundle.vim'
 " -----------------------------------------------------
 " Plugins
 
+Plugin 'AndrewRadev/splitjoin.vim'
 Plugin 'alvan/vim-closetag'
 Plugin 'christoomey/vim-sort-motion'
 Plugin 'danro/rename.vim'
