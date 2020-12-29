@@ -1,5 +1,5 @@
 " Use OS X system clipboard.
-set clipboard=unnamed " Use OS X system clipboard.
+set clipboard=unnamed
 
 " Remove delay after pressing escape key.
 set noesckeys
@@ -12,6 +12,3 @@ set noswapfile
 " Add line numbers.
 set number
 set numberwidth=5
-
-" Don't fold Markdown.
-let g:vim_markdown_folding_disabled=1

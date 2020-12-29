@@ -1,9 +1,0 @@
-name: <%= File.basename(Dir.getwd) %>-2
-
-windows:
-  - tests:servers:
-      layout: 0fc8,164x49,0,0{82x49,0,0,13,81x49,83,0,14}
-
-      panes:
-        - cd ui; npm run watch:testing
-        - cd api; npm run watch:testing

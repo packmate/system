@@ -1,4 +1,36 @@
-# `g` does `git status` when not given a command.
+# Branching
+alias gb='git checkout -b'
+
+# Complete a working branch.
+function gbd {
+  git branch -d $@ && git branch -dr origin/$@ && git push origin --delete $@
+}
+
+# Checking Out
+alias gc='git checkout'
+
+# Cloning
+alias gg='git clone'
+
+# Committing
+alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
+alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
+
+# Diffing
+alias gd="git diff -- . ':!*package-lock.json'"
+alias gdc="git diff --cached -- . ':!*package-lock.json'"
+
+# Logging
+alias gl='git log --pretty=oneline --abbrev-commit --graph --decorate'
+
+# Pushing
+alias gp='git push'
+
+# Staging
+alias ga='git add -A'
+
+# Status
+# Execute `git status` when not given a command.
 function g {
   if [[ $# > 0 ]]; then
     git $@
@@ -6,33 +38,3 @@ function g {
     git status -sb
   fi
 }
-
-# Branching
-alias gb='git checkout -b'
-
-function gbd {
-  git branch -d $@ && git branch -dr origin/$@ && git push origin --delete $@
-}
-
-# Checkouts
-alias gc='git checkout'
-
-# Cloning
-alias gg='git clone'
-
-# Staging
-alias ga='git add -A'
-
-# Diffs
-alias gd="git diff -- . ':!*package-lock.json'"
-alias gdc="git diff --cached -- . ':!*package-lock.json'"
-
-# Committing
-alias gcm='git commit --allow-empty -m' # Allow inputting a message after the alias.
-alias gam='git commit --amend -Chead'   # Amend with most recent commit's message.
-
-# Deploying
-alias gp='git push'
-
-# Pretty Logs
-alias gl='git log --pretty=oneline --abbrev-commit --graph --decorate'

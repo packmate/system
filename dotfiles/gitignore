@@ -1,9 +1,6 @@
 # Mac OS X
 .DS_Store
 
-# Temporary directories.
-tmp/
-
 # Node
 node_modules/
 npm-debug.log
@@ -11,6 +8,9 @@ npm-debug.log
 # Scratch Files
 scratch.md
 
-# Now
+# Temporary directories.
+tmp/
+
+# Vercel
 .now
 .vercel

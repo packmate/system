@@ -22,10 +22,10 @@ map <Leader>t :NERDTreeToggle<cr>
 " Show hidden files.
 let NERDTreeShowHidden=1
 
-" Ignore some files.
+" Ignore some files in filesystem navigation.
 let NERDTreeIgnore=[ '\.git$', '\.vercel$', 'build$', 'node_modules$', 'package-lock\.json$' ]
 
-" Close out if the last buffer is a NERDTree.
+" Close NERDTree if it is the only open window.
 function! s:CloseIfOnlyNerdTreeLeft()
   if exists("t:NERDTreeBufName")
     if bufwinnr(t:NERDTreeBufName) != -1

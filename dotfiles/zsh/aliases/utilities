@@ -1,10 +1,3 @@
-alias mdb="mongod --config /usr/local/etc/mongod.conf"
+# Postgres
 alias pgstart="pg_ctl -D /usr/local/var/postgres start"
 alias pgstop="pg_ctl -D /usr/local/var/postgres stop"
-
-function ncd {
-  cd $@ && npm i
-}
-
-alias bms="API_TOKEN=test PORT=8080 npm start"
-alias s="npm start"

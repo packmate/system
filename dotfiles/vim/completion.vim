@@ -1,9 +1,8 @@
-" HTML Tag Completion
-
+" Enable HTML Tag completion.
 let g:closetag_filenames = '*.html, *.js'
 let g:closetag_xhtml_filenames = '*.html, *.js'
 
-" Tab Completion Options
+" Tab completion options:
 " - On first tab, show a list of possibilities.
 " - On second tab, autocomplete as much as possible.
 " - On third tab, complete the next full match.

@@ -1,18 +1,4 @@
+# Use in shortcuts file for quick navigation.
 goToAndClear() {
   cd $1 && clear
 }
-
-alias b='tmuxinator basic'
-alias bs='tmuxinator basic-start'
-alias bsv='tmuxinator basic-start-vertical'
-alias d='goToAndClear ~/Desktop'
-alias dotfiles='goToAndClear ~/Development/@packmate/system/dotfiles'
-alias f='tmuxinator foundation'
-alias fa='tmuxinator foundation-api'
-alias fm1='tmuxinator foundation-multiscreen-1'
-alias fm2='tmuxinator foundation-multiscreen-2'
-alias gr='goToAndClear ~/Development/@thinkful/grading'
-alias njs='goToAndClear ~/Development/@thinkful/noteful-json-server && npm start'
-alias pe='goToAndClear ~/Development/@praising-earth'
-alias tf='goToAndClear ~/Development/@thinkful'
-alias v='goToAndClear ~/Development'

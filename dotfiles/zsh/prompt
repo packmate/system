@@ -1,5 +1,5 @@
 # -----------------------------------------------------
-# Functions for adding Git information to the prompt.
+# Add Git information to the prompt.
 
 get_git_branch() {
   (g rev-parse --abbrev-ref HEAD) 2> /dev/null

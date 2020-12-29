@@ -8,10 +8,13 @@ export TZ=utc
 # Load sensitive data.
 source $HOME/.zsh/env
 
+# Load shortcuts.
+source $HOME/.zsh/shortcuts
+
 # Use Vim mode for command line.
 bindkey -v
 
-# Use Vim.
+# Use Vim as default editor.
 export EDITOR='vim'
 
 # Use colors.
@@ -21,7 +24,7 @@ colors
 # Enable colored output from commands.
 export CLICOLOR=1
 
-# Lots of history.
+# Store lots of history.
 export HISTSIZE=500
 
 # Use Command-R to search through history.
