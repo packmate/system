@@ -31,6 +31,9 @@
   excludesfile = ~/.gitignore
   editor = /usr/local/bin/vim
 
+[pull]
+  rebase = false
+
 [push]
   # Push current branch even if it hasn't been pushed before.
   default = current
