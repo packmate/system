@@ -17,3 +17,7 @@ echo "[system] Dotfiles linked."
 echo "[system] Creating ZSH environment file ..."
 /usr/bin/touch $HOME/.zsh/env
 echo "[system] ZSH environment file created."
+
+echo "[system] Creating ZSH shortcuts file ..."
+/usr/bin/touch $HOME/.zsh/shortcuts
+echo "[system] ZSH shortcuts file created."
