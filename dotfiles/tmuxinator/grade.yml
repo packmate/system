@@ -1,0 +1,9 @@
+name: <%= File.basename(Dir.getwd) %>
+
+windows:
+  - basic:
+      layout: 4424,189x52,0,0{118x52,0,0,2,70x52,119,0,4}
+
+      panes:
+        - vim
+        - API_TOKEN=test PORT=8080 npm start

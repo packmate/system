@@ -1,0 +1,6 @@
+function grade {
+  git clone $@
+  cd $(echo $@ | sed 's:.*/::')
+  npm install
+  tmuxinator grade
+}

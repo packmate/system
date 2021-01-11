@@ -1,6 +1,7 @@
 source $HOME/.zsh/aliases/index
 source $HOME/.zsh/prompt
 source $HOME/.zsh/version-managers
+source $HOME/.zsh/workflow
 
 # Use UTC.
 export TZ=utc
