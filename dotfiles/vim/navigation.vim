@@ -13,6 +13,7 @@ noremap <C-l> <C-w>l
 
 " Tab traversal.
 nmap fr :tabnew<cr>
+nmap fe :-1tabnew<cr>
 nmap fg :tabn<cr>
 nmap fd :tabp<cr>
 
