@@ -1,4 +1,4 @@
 # Use in shortcuts file for quick navigation.
-goToAndClear() {
+go() {
   cd $1 && clear
 }
