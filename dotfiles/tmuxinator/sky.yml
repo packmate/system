@@ -1,0 +1,23 @@
+name: <%= File.basename(Dir.getwd) %>
+
+windows:
+  - tests:
+      layout: c555,165x49,0,0{106x49,0,0,0,58x49,107,0,3}
+      root: tests
+
+      panes:
+        - vim
+        - npm run develop
+
+  - api:
+      layout: 3044,165x49,0,0{106x49,0,0,1,58x49,107,0[58x28,107,0,4,58x20,107,29,5]}
+      root: api
+
+      panes:
+        - vim
+        - npm run develop:testing
+        - npm run tests:watch
+
+  - root:
+    panes:
+      - 
