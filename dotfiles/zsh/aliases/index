@@ -1,6 +1,5 @@
 source $HOME/.zsh/aliases/git
 source $HOME/.zsh/aliases/navigation
 source $HOME/.zsh/aliases/unix
-source $HOME/.zsh/aliases/utilities
 
 alias resource='source ~/.zshrc'

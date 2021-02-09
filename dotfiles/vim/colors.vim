@@ -23,8 +23,5 @@ let g:jsx_ext_required = 0
 " Custom filetypes.
 au BufNewFile,BufRead *.sv set filetype=svelte
 
-" Enable syntax highlighting in Svelte files.
-let g:svelte_preprocessors = [ 'stylus' ]
-
 " Colorize!
 syntax on

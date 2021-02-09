@@ -23,9 +23,6 @@ alias gdc="git diff --cached -- . ':!*package-lock.json'"
 # Logging
 alias gl='git log --pretty=oneline --abbrev-commit --graph --decorate'
 
-# Pushing
-alias gp='git push'
-
 # Staging
 alias ga='git add -A'
 

@@ -12,5 +12,4 @@ scratch.md
 tmp/
 
 # Vercel
-.now
 .vercel
