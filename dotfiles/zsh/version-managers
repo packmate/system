@@ -1,8 +1,8 @@
 # Use Homebrew.
-export PATH=/usr/local/bin:$PATH
+export PATH=/opt/homebrew/bin:$PATH
 
 # Use node@12.
-export PATH=/usr/local/opt/node@12/bin:$PATH
+export PATH=/opt/homebrew/opt/node@12/bin:$PATH
 
 # Use rbenv.
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
