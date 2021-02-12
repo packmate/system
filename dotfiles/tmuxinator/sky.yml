@@ -2,30 +2,41 @@ name: <%= File.basename(Dir.getwd) %>
 
 windows:
   - tests:
-      layout: c555,165x49,0,0{106x49,0,0,0,58x49,107,0,3}
+      layout: c826,176x49,0,0{120x49,0,0,0,55x49,121,0,5}
       root: tests
 
       panes:
         - vim
         - npm run develop
 
+  - api:testing:
+      root: api
+
+      panes:
+        - npm run develop:testing
+
   - api:
-      layout: 3044,165x49,0,0{106x49,0,0,1,58x49,107,0[58x28,107,0,4,58x20,107,29,5]}
+      layout: c829,176x49,0,0{120x49,0,0,1,55x49,121,0,7}
       root: api
 
       panes:
         - vim
-        - npm run develop:testing
         - npm run tests:watch
 
   - ui:
-      layout: 3044,165x49,0,0{106x49,0,0,1,58x49,107,0[58x28,107,0,4,58x20,107,29,5]}
+      layout: 7110,176x49,0,0{120x49,0,0,2,55x49,121,0[55x46,121,0,8,55x2,121,47,9]}
       root: ui
 
       panes:
         - vim
         - npm run develop
         - npm run develop:testing
+
+  - api:development:
+      root: api
+
+      panes:
+        - npm run develop
 
   - root:
     panes:
