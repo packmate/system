@@ -15,5 +15,5 @@ done
 echo "[system] Dotfiles linked."
 
 echo "[system] Creating ZSH shortcuts file ..."
-/usr/bin/touch $HOME/.zsh/shortcuts
+/usr/bin/touch $HOME/.zsh_shortcuts
 echo "[system] ZSH shortcuts file created."
